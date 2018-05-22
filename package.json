@@ -8,11 +8,9 @@
     "test": "jest",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o storybook",
-    "components-update-patch": "npm version patch",
-    "components-update-minor": "npm version minor",
-    "components-update-major": "npm version major",
-    "publish-components": "npm publish",
-    "deploy-storybook": ""
+    "components-update-patch": "npm version patch -m 'Update to %s'",
+    "components-update-minor": "npm version minor -m 'Update to %s'",
+    "components-update-major": "npm version major -m 'Update to %s'"
   },
   "author": "",
   "license": "ISC",

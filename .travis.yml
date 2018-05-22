@@ -7,10 +7,18 @@ script:
   - npm run test
 before_deploy:
   - npm run build-storybook
+  - npm run build-components
 deploy:
   skip_cleanup: true
-  provider: surge
-  project: ./storybook/
-  domain: nasa-1975.surge.sh
-  on:
-    branch: master
+  - provider: surge
+    project: ./storybook/
+    domain: nasa-1975.surge.sh
+    on:
+      branch: master
+  - provider: npm
+    email: simon.schwartz0@gmail.com
+    api_key:
+      secure: "Sy30dgymnqvySUKFCtyivBpGbKGkvBONvPCoWlTqTeaiiI4T+XeWvCpmWzeN3nqqoMxPZHlB0TyykH294KpwXSGpaLF/ugpFUyn+szUCOZ2F/hJY6sw7VFV7g78epuE774pfm0jWowWVx2Rk3MMBiV1eR8fXIY8+RCMuJDyiQvbzkugGbnp7SnRNV4UhlHeXUAZ1BYSeDtzDcl4OXwmfWiTGki2ygPqqtlQwNx81KnlkvHCcQ+/IZFP9ARPKsqYeLSWyvhxQ7+tku5SP8h9yIFppyrZqr7ORt7gO+gIcvw6jm8YOWMw7SCj693xaTNYROtqsLljT+IV4x7/zCo7FLO+uUlmWiLFo1bZNAoQP2Qj4HXuHfkDKTMlx7TdiB/W2TtfkobT4NWzHYNSjlp027VrF7Mb3uvnFLBK+NU77jc/4cCM0Jp9+AGtq4Y6EHZaROoOJ82Q4c5PuLrfbAose8doNeg6/tafvnaSFAD8UKIEGhylo4miRKlznnob/w6UVs5KkJ6P4n4PMQxYlGbHc8uThAsOQeiTGDFEBge3gLasCxSNriz8IsZMof4CSGHDzXHgEKoi/AHfasd33HGnpaXPzgYnxa0VT6KhSqkcgCn2a1+0W6SMz+rP/v5TDBg4fvqFl2kwJT20ZEK80ApstIT+R/IrwcQfxHzbSfi3YMew="
+    on:
+      tags: true
+      branch: master
