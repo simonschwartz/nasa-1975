@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 'node'
+install:
+  - npm install
+script:
+  - npm run test
+before_deploy:
+  - npm run build-storybook
+deploy:
+  skip_cleanup: true
+  provider: surge
+  project: ./storybook/
+  domain: nasa-1975.surge.sh
+  on:
+    branch: master
