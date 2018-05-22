@@ -3,6 +3,10 @@
   "version": "1.1.4",
   "description": "A React design system based on the 1975 NASA Graphics Standards Manual.",
   "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonschwartz/nasa-1975.git"
+  },
   "scripts": {
     "build-components": "babel lib -d build --ignore spec.js,test.js,story.js --copy-files",
     "test": "jest",

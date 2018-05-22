@@ -1,5 +1,6 @@
 .babelrc
 .storybook
+.travis.yml
 lib
 storybook
 storybook-static
