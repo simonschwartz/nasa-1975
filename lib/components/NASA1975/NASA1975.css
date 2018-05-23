@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-family: "Helvetica", "Segoe UI", Arial, sans-serif;
+}
+
+a {
+  color: #e30613;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+}
+
+li::before {
+  content: "\2014";
+  padding-right: 2px;
+}

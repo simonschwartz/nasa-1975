@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correct markup for lg size prop 1`] = `
+<div
+  className="NASA1975-loader-container NASA1975-loader-container--lg  "
+>
+  <div
+    className="NASA1975-loader-outer"
+  >
+    <div
+      className="NASA1975-loader-inner"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`renders correct markup for md size prop 1`] = `
+<div
+  className="NASA1975-loader-container NASA1975-loader-container--md  "
+>
+  <div
+    className="NASA1975-loader-outer"
+  >
+    <div
+      className="NASA1975-loader-inner"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`renders correct markup for sm size prop 1`] = `
+<div
+  className="NASA1975-loader-container NASA1975-loader-container--sm  "
+>
+  <div
+    className="NASA1975-loader-outer"
+  >
+    <div
+      className="NASA1975-loader-inner"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`renders correct markup with inverted prop 1`] = `
+<div
+  className="NASA1975-loader-container NASA1975-loader-container--md NASA1975-loader-container--inverted "
+>
+  <div
+    className="NASA1975-loader-outer"
+  >
+    <div
+      className="NASA1975-loader-inner"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`renders correct markup with message prop 1`] = `
+<div
+  className="NASA1975-loader-container NASA1975-loader-container--md  "
+>
+  <div
+    className="NASA1975-loader-outer"
+  >
+    <div
+      className="NASA1975-loader-inner"
+    />
+  </div>
+  <span
+    className="NASA1975-loader-message"
+  >
+    -loading message-
+  </span>
+</div>
+`;
+
+exports[`renders correct markup with no props 1`] = `
+<div
+  className="NASA1975-loader-container NASA1975-loader-container--md  "
+>
+  <div
+    className="NASA1975-loader-outer"
+  >
+    <div
+      className="NASA1975-loader-inner"
+    />
+  </div>
+  
+</div>
+`;

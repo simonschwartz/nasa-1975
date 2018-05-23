@@ -6,3 +6,4 @@ storybook
 storybook-static
 stories
 .DS_Store
+__mocks__

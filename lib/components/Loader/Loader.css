@@ -1,0 +1,99 @@
+.NASA1975-loader-container {
+  display: inline-block;
+  text-align: center;
+  animation-name: NASA1975-loading__aniamtion__fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: .25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.NASA1975-loader-outer {
+  position: relative;
+  margin: auto;
+}
+
+.NASA1975-loader-container--lg .NASA1975-loader-outer {
+  width: 60px;
+  height: 60px;
+}
+
+.NASA1975-loader-container--md .NASA1975-loader-outer {
+  width: 40px;
+  height: 40px;
+}
+
+.NASA1975-loader-container--sm .NASA1975-loader-outer {
+  width: 20px;
+  height: 20px;
+}
+
+.NASA1975-loader-container--lg .NASA1975-loader-inner {
+  border-top: 6px solid #f4f4f4;
+  border-right: 6px solid #f4f4f4;
+  border-bottom: 6px solid #f4f4f4;
+  border-left: 6px solid #e30613;
+}
+
+.NASA1975-loader-container--md .NASA1975-loader-inner {
+  border-top: 4px solid #f4f4f4;
+  border-right: 4px solid #f4f4f4;
+  border-bottom: 4px solid #f4f4f4;
+  border-left: 4px solid #e30613;
+}
+
+.NASA1975-loader-container--sm .NASA1975-loader-inner {
+  border-top: 3px solid #f4f4f4;
+  border-right: 3px solid #f4f4f4;
+  border-bottom: 3px solid #f4f4f4;
+  border-left: 3px solid #e30613;
+}
+
+.NASA1975-loader-inner {
+  font-size: 6px;
+  position: relative;
+  border-top: 4px solid #f4f4f4;
+  border-right: 4px solid #f4f4f4;
+  border-bottom: 4px solid #f4f4f4;
+  border-left: 4px solid #e30613;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation-name: NASA1975-loading__aniamtion__spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: .25s;
+  animation-iteration-count: infinite;
+}
+
+.NASA1975-loader-message {
+  display: block;
+  color: #4e4e4e;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.NASA1975-loader-container--inverted .NASA1975-loader-message {
+  color: #fff;
+}
+
+@keyframes NASA1975-loading__aniamtion__spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes NASA1975-loading__aniamtion__fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
