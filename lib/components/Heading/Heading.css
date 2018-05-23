@@ -1,0 +1,70 @@
+.NASA1975-heading {
+  margin: 0;
+  line-height: 1;
+}
+
+.NASA1975-heading--xl {
+  font-size: 3rem;
+}
+
+.NASA1975-heading--lg {
+  font-size: 2rem;
+}
+
+.NASA1975-heading--md {
+  font-size: 1.4rem;
+}
+
+.NASA1975-heading--sm {
+  font-size: 1.2rem;
+}
+
+.NASA1975-heading--xs {
+  font-size: 1rem;
+}
+
+.NASA1975-heading--bold {
+  font-weight: 600;
+}
+
+.NASA1975-heading--medium {
+  font-weight: 400;
+}
+
+.NASA1975-heading--light {
+  font-weight: 300;
+}
+
+@media (min-width: 400px) {
+  .NASA1975-heading--xl {
+    font-size: 4rem;
+  }
+
+  .NASA1975-heading--lg {
+    font-size: 3rem;
+  }
+
+  .NASA1975-heading--md {
+    font-size: 2rem;
+  }
+
+  .NASA1975-heading--sm {
+    font-size: 1.4rem;
+  }
+
+  .NASA1975-heading--xs {
+    font-size: 1rem;
+  }
+
+  .NASA1975-heading--bold {
+    font-weight: 600;
+  }
+
+  .NASA1975-heading--normal {
+    font-weight: 400;
+  }
+
+  .NASA1975-heading--light {
+    font-weight: 300;
+  }
+}
