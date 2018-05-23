@@ -20,6 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.5",
+    "@storybook/addon-info": "^3.4.5",
     "@storybook/addon-knobs": "^3.4.5",
     "@storybook/addon-links": "^3.4.5",
     "@storybook/addons": "^3.4.5",
