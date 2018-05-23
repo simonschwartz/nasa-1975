@@ -3,9 +3,14 @@
 }
 
 body {
-  font-size: 16px;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
   font-family: "Helvetica", "Segoe UI", Arial, sans-serif;
+}
+
+p {
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
 }
 
 a {
@@ -15,9 +20,6 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
-}
-
-li {
 }
 
 li::before {
