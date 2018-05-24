@@ -1,0 +1,51 @@
+.NASA1975-logo-type--lg > .NASA1975-logo-type-logo {
+  max-width: 300px;
+  height: auto;
+}
+
+.NASA1975-logo-type--md > .NASA1975-logo-type-logo {
+  max-width: 270px;
+  height: auto;
+}
+
+.NASA1975-logo-type--sm > .NASA1975-logo-type-logo {
+  max-width: 190px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .NASA1975-logo-type--lg > .NASA1975-logo-type-logo {
+    max-width: 380px;
+    height: auto;
+  }
+
+  .NASA1975-logo-type--md > .NASA1975-logo-type-logo {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .NASA1975-logo-type--sm > .NASA1975-logo-type-logo {
+    max-width: 225px;
+    height: auto;
+  }
+}
+
+.NASA1975-logo-type--dark .NASA1975-logo-type-logo * {
+  fill: #000;
+}
+
+.NASA1975-logo-type--red .NASA1975-logo-type-logo * {
+  fill: #e30613;
+}
+
+.NASA1975-logo-type--light .NASA1975-logo-type-logo * {
+  fill: #fff;
+}
+
+.NASA1975-logo-type-heading {
+  color: #000;
+}
+
+.NASA1975-logo-type--light .NASA1975-logo-type-heading {
+  color: #fff;
+}
