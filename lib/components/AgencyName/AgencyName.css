@@ -1,0 +1,24 @@
+.NASA1975-agency-name {
+  line-height: 1;
+}
+
+.NASA1975-agency-name-N,
+.NASA1975-agency-name-Aa,
+.NASA1975-agency-name-SA,
+.NASA1975-agency-name-S,
+.NASA1975-agency-name-A {
+  display: block;
+}
+
+.NASA1975-agency-name--inline .NASA1975-agency-name-Aa {
+  white-space: nowrap;
+}
+
+@media (min-width: 550px) {
+  .NASA1975-agency-name--inline .NASA1975-agency-name-N,
+  .NASA1975-agency-name--inline .NASA1975-agency-name-Aa,
+  .NASA1975-agency-name--inline .NASA1975-agency-name-S,
+  .NASA1975-agency-name--inline .NASA1975-agency-name-A {
+    display: inline-block;
+  }
+}

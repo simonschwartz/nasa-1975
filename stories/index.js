@@ -5,6 +5,7 @@ import NASA1975Story from "../lib/components/NASA1975/NASA1975.story.js";
 import WormLogoStory from "../lib/components/WormLogo/WormLogo.story.js";
 import LoaderStory from "../lib/components/Loader/Loader.story.js";
 import HeadingStory from "../lib/components/Heading/Heading.story.js";
+import AgencyNameStory from "../lib/components/AgencyName/AgencyName.story.js";
 
 const componentStories = storiesOf("Components", module);
 componentStories.addDecorator(withKnobs);
@@ -13,3 +14,4 @@ componentStories.add("WormLogo", () => <WormLogoStory />);
 componentStories.add("NASA1975", () => <NASA1975Story />);
 componentStories.add("Loader", () => <LoaderStory />);
 componentStories.add("Heading", () => <HeadingStory />);
+componentStories.add("AgencyName", () => <AgencyNameStory />);

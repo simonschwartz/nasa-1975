@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correct markup with centerName prop 1`] = `
+<div
+  className=""
+>
+  <h1
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--light NASA1975-agency-name NASA1975-agency-name--inline"
+  >
+    <span
+      className="NASA1975-agency-name-N"
+    >
+      National
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-Aa"
+    >
+      Aeronautics and
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-SA"
+    >
+      <span
+        className="NASA1975-agency-name-S"
+      >
+        Space
+      </span>
+       
+      <span
+        className="NASA1975-agency-name-A"
+      >
+        Administration
+      </span>
+    </span>
+  </h1>
+  <h1
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--medium "
+  >
+    John F. Kennedy Space Center
+  </h1>
+</div>
+`;
+
+exports[`renders correct markup with headingLevel prop 1`] = `
+<div
+  className=""
+>
+  <h3
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--light NASA1975-agency-name NASA1975-agency-name--inline"
+  >
+    <span
+      className="NASA1975-agency-name-N"
+    >
+      National
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-Aa"
+    >
+      Aeronautics and
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-SA"
+    >
+      <span
+        className="NASA1975-agency-name-S"
+      >
+        Space
+      </span>
+       
+      <span
+        className="NASA1975-agency-name-A"
+      >
+        Administration
+      </span>
+    </span>
+  </h3>
+  
+</div>
+`;
+
+exports[`renders correct markup with multiple props 1`] = `
+<div
+  className=""
+>
+  <h4
+    className="NASA1975-heading NASA1975-heading--sm NASA1975-heading--light NASA1975-agency-name NASA1975-agency-name--stacked"
+  >
+    <span
+      className="NASA1975-agency-name-N"
+    >
+      National
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-Aa"
+    >
+      Aeronautics and
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-SA"
+    >
+      <span
+        className="NASA1975-agency-name-S"
+      >
+        Space
+      </span>
+       
+      <span
+        className="NASA1975-agency-name-A"
+      >
+        Administration
+      </span>
+    </span>
+  </h4>
+  <h4
+    className="NASA1975-heading NASA1975-heading--sm NASA1975-heading--medium "
+  >
+    John F. Kennedy Space Center
+  </h4>
+</div>
+`;
+
+exports[`renders correct markup with no props 1`] = `
+<div
+  className=""
+>
+  <h1
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--light NASA1975-agency-name NASA1975-agency-name--inline"
+  >
+    <span
+      className="NASA1975-agency-name-N"
+    >
+      National
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-Aa"
+    >
+      Aeronautics and
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-SA"
+    >
+      <span
+        className="NASA1975-agency-name-S"
+      >
+        Space
+      </span>
+       
+      <span
+        className="NASA1975-agency-name-A"
+      >
+        Administration
+      </span>
+    </span>
+  </h1>
+  
+</div>
+`;
+
+exports[`renders correct markup with size prop 1`] = `
+<div
+  className=""
+>
+  <h1
+    className="NASA1975-heading NASA1975-heading--md NASA1975-heading--light NASA1975-agency-name NASA1975-agency-name--inline"
+  >
+    <span
+      className="NASA1975-agency-name-N"
+    >
+      National
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-Aa"
+    >
+      Aeronautics and
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-SA"
+    >
+      <span
+        className="NASA1975-agency-name-S"
+      >
+        Space
+      </span>
+       
+      <span
+        className="NASA1975-agency-name-A"
+      >
+        Administration
+      </span>
+    </span>
+  </h1>
+  
+</div>
+`;
+
+exports[`renders correct markup with stacked prop 1`] = `
+<div
+  className=""
+>
+  <h1
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--light NASA1975-agency-name NASA1975-agency-name--stacked"
+  >
+    <span
+      className="NASA1975-agency-name-N"
+    >
+      National
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-Aa"
+    >
+      Aeronautics and
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-SA"
+    >
+      <span
+        className="NASA1975-agency-name-S"
+      >
+        Space
+      </span>
+       
+      <span
+        className="NASA1975-agency-name-A"
+      >
+        Administration
+      </span>
+    </span>
+  </h1>
+  
+</div>
+`;
