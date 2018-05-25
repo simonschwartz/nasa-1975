@@ -7,6 +7,7 @@ import LoaderStory from "../lib/components/Loader/Loader.story.js";
 import HeadingStory from "../lib/components/Heading/Heading.story.js";
 import AgencyNameStory from "../lib/components/AgencyName/AgencyName.story.js";
 import LogoTypeStory from "../lib/components/LogoType/LogoType.story.js";
+import StemLogoStory from "../lib/components/StemLogo/StemLogo.story.js";
 
 const componentStories = storiesOf("Components", module);
 componentStories.addDecorator(withKnobs);
@@ -17,3 +18,4 @@ componentStories.add("Loader", () => <LoaderStory />);
 componentStories.add("Heading", () => <HeadingStory />);
 componentStories.add("AgencyName", () => <AgencyNameStory />);
 componentStories.add("LogoType", () => <LogoTypeStory />);
+componentStories.add("StemLogo", () => <StemLogoStory />);
