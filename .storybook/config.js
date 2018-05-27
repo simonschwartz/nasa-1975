@@ -4,6 +4,7 @@ import { setDefaults } from "@storybook/addon-info";
 setDefaults({
   header: false,
   inline: true,
+  maxPropsIntoLine: 1,
   styles: {
     infoBody: {
       border: "none",

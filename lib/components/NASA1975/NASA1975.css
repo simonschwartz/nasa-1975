@@ -1,28 +1,24 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
+.NASA1975 {
   font-size: 1rem;
   line-height: 1.5;
   font-family: "Helvetica", "Segoe UI", Arial, sans-serif;
 }
 
-p {
+.NASA1975 p {
   font-weight: 400;
   margin: 0 0 1.5rem 0;
 }
 
-a {
+.NASA1975 a {
   color: #e30613;
 }
 
-ul {
+.NASA1975 ul {
   list-style: none;
   padding-left: 0;
 }
 
-li::before {
+.NASA1975 li::before {
   content: "\2014";
   padding-right: 2px;
 }

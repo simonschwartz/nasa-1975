@@ -18,7 +18,15 @@
   letter-spacing: -5px;
 }
 
-.NASA1975-stem-logo--inverted.NASA1975-stem-logo .NASA1975-stem-logo-container * {
+.NASA1975-stem-logo--red.NASA1975-stem-logo .NASA1975-stem-logo-container * {
+  fill: #e30613;
+}
+
+.NASA1975-stem-logo--dark.NASA1975-stem-logo .NASA1975-stem-logo-container * {
+  fill: #000;
+}
+
+.NASA1975-stem-logo--light.NASA1975-stem-logo .NASA1975-stem-logo-container * {
   fill: #fff;
 }
 

@@ -7,6 +7,7 @@
   animation-delay: .25s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
+  box-sizing: border-box;
 }
 
 .NASA1975-loader-outer {
@@ -65,6 +66,7 @@
   animation-timing-function: linear;
   animation-delay: .25s;
   animation-iteration-count: infinite;
+  box-sizing: border-box;
 }
 
 .NASA1975-loader-message {
@@ -72,6 +74,9 @@
   color: #4e4e4e;
   font-size: 15px;
   margin-top: 6px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Helvetica", "Segoe UI", Arial, sans-serif;
 }
 
 .NASA1975-loader-container--inverted .NASA1975-loader-message {

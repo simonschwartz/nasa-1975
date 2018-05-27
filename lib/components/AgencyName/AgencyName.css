@@ -1,5 +1,7 @@
-.NASA1975-agency-name {
-  line-height: 1;
+.NASA1975-agency-name,
+.NASA1975-agency-name-center-name,
+.NASA1975-agency-name-center-address {
+  line-height: 1.1;
 }
 
 .NASA1975-agency-name-N,
@@ -12,6 +14,10 @@
 
 .NASA1975-agency-name--inline .NASA1975-agency-name-Aa {
   white-space: nowrap;
+}
+
+.NASA1975-agency-name-center-name {
+  margin-bottom: 0;
 }
 
 @media (min-width: 550px) {

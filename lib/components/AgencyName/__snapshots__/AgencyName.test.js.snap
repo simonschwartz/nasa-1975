@@ -36,7 +36,7 @@ exports[`renders correct markup with centerName prop 1`] = `
     </span>
   </h1>
   <h1
-    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--medium "
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--medium NASA1975-agency-name-center-name"
   >
     John F. Kennedy Space Center
   </h1>
@@ -82,6 +82,57 @@ exports[`renders correct markup with headingLevel prop 1`] = `
 </div>
 `;
 
+exports[`renders correct markup with multiple line centerAddress prop 1`] = `
+<div
+  className=""
+>
+  <h1
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--light NASA1975-agency-name NASA1975-agency-name--inline"
+  >
+    <span
+      className="NASA1975-agency-name-N"
+    >
+      National
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-Aa"
+    >
+      Aeronautics and
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-SA"
+    >
+      <span
+        className="NASA1975-agency-name-S"
+      >
+        Space
+      </span>
+       
+      <span
+        className="NASA1975-agency-name-A"
+      >
+        Administration
+      </span>
+    </span>
+  </h1>
+  
+  <h1
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--light NASA1975-agency-name-center-address"
+  >
+    <span>
+      Washington. D.C. 20546
+      <br />
+    </span>
+    <span>
+      Second line
+      <br />
+    </span>
+  </h1>
+</div>
+`;
+
 exports[`renders correct markup with multiple props 1`] = `
 <div
   className=""
@@ -118,7 +169,7 @@ exports[`renders correct markup with multiple props 1`] = `
     </span>
   </h4>
   <h4
-    className="NASA1975-heading NASA1975-heading--sm NASA1975-heading--medium "
+    className="NASA1975-heading NASA1975-heading--sm NASA1975-heading--medium NASA1975-agency-name-center-name"
   >
     John F. Kennedy Space Center
   </h4>
@@ -161,6 +212,53 @@ exports[`renders correct markup with no props 1`] = `
     </span>
   </h1>
   
+</div>
+`;
+
+exports[`renders correct markup with single line centerAddress prop 1`] = `
+<div
+  className=""
+>
+  <h1
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--light NASA1975-agency-name NASA1975-agency-name--inline"
+  >
+    <span
+      className="NASA1975-agency-name-N"
+    >
+      National
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-Aa"
+    >
+      Aeronautics and
+    </span>
+     
+    <span
+      className="NASA1975-agency-name-SA"
+    >
+      <span
+        className="NASA1975-agency-name-S"
+      >
+        Space
+      </span>
+       
+      <span
+        className="NASA1975-agency-name-A"
+      >
+        Administration
+      </span>
+    </span>
+  </h1>
+  
+  <h1
+    className="NASA1975-heading NASA1975-heading--lg NASA1975-heading--light NASA1975-agency-name-center-address"
+  >
+    <span>
+      Washington. D.C. 20546
+      <br />
+    </span>
+  </h1>
 </div>
 `;
 
