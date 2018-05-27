@@ -1,6 +1,12 @@
-# NASA 1975
+<p align="center">
+    <img height="128" width="128" src="https://github.com/simonschwartz/nasa-1975/raw/master/nasa-worm-grid.png">
+</p>
 
-A React design system based on the 1975 NASA Graphics Standards Manual.
+<h1 align="center">NASA 1975</h1>
+
+A React design system based on the [1975 NASA Graphics Standards Manual](https://standardsmanual.com/products/nasa-graphics-standards-manual).
+
+A free [PDF version of the graphics manual](https://www.nasa.gov/sites/default/files/atoms/files/nasa_graphics_manual_nhb_1430-2_jan_1976.pdf) has also been released by NASA.
 
 ## Getting started
 
@@ -10,32 +16,12 @@ To install the NASA 1975 design system, use:
 npm install nasa-1975-wip
 ```
 
-## Documentation
+See the [documentation](https://nasa-1975.surge.sh/) for usage information and examples.
 
-[https://nasa-1975.surge.sh/](https://nasa-1975.surge.sh/)
+## Example projects
 
-## Releasing
+Work in progress...
 
-### Documentation
+## Contributing
 
-The documentation site is automatically deployed from `master`.
-
-### NPM module
-
-To release a new version of the nasa-1975 NPM module:
-
-Use the relevant command to update the package version
-
-```
-npm run components-update-patch
-npm run components-update-minor
-npm run components-update-major
-```
-
-Push changes to `master`.
-
-Push the updated version tag to `master` to trigger deployment to NPM with:
-
-```
-git push --tags
-```
+Our [contributing guide](https://github.com/simonschwartz/nasa-1975/blob/master/.github/CONTRIBUTING.md) is a step-by-step setup, development and deployment guide.
