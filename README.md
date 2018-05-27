@@ -1,8 +1,8 @@
 <p align="center">
-    <img height="128" width="128" src="https://github.com/simonschwartz/nasa-1975/raw/master/nasa-worm-grid.png">
+    <img alt="NASA worm logo" src="https://github.com/simonschwartz/nasa-1975/raw/master/nasa-worm.png">
 </p>
 
-<h1 align="center">NASA 1975</h1>
+# NASA 1975
 
 A React design system based on the [1975 NASA Graphics Standards Manual](https://standardsmanual.com/products/nasa-graphics-standards-manual).
 
