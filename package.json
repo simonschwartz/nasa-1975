@@ -1,6 +1,6 @@
 {
-  "name": "nasa-1975-wip",
-  "version": "1.1.5",
+  "name": "nasa-1975",
+  "version": "0.0.1",
   "description": "A React design system based on the 1975 NASA Graphics Standards Manual.",
   "main": "build/index.js",
   "repository": {
