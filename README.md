@@ -13,7 +13,7 @@ A free [PDF version of the graphics manual](https://www.nasa.gov/sites/default/f
 To install the NASA 1975 design system, use:
 
 ```
-npm install nasa-1975-wip
+npm install nasa-1975
 ```
 
 See the [documentation](https://nasa-1975.surge.sh/) for usage information and examples.
