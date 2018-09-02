@@ -42,5 +42,8 @@
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
     }
+  },
+  "dependencies": {
+    "emotion": "^9.2.5"
   }
 }
