@@ -1,0 +1,77 @@
+{
+  "config": {
+    "title": "Nasa 1975",
+    "description": "A React design system based on the 1975 NASA Graphics Standards Manual.",
+    "menu": [],
+    "ordering": "descending",
+    "version": "1.0.0",
+    "repository": "https://github.com/simonschwartz/nasa-1975",
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "theme": "theme.js"
+  },
+  "entries": {
+    "lib/components/Colours/docs/index.mdx": {
+      "name": "Colours",
+      "id": "8a99ed0e85b858c8e1f83cb6dc51af17",
+      "filepath": "lib/components/Colours/docs/index.mdx",
+      "link": "https://github.com/simonschwartz/nasa-1975/edit/master/lib/components/Colours/docs/index.mdx",
+      "slug": "lib-components-colours-docs-index",
+      "route": "/lib-components-colours-docs-index",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "colours",
+          "value": "Colours"
+        }
+      ]
+    },
+    "lib/components/Typography/docs/index.mdx": {
+      "name": "Typography",
+      "id": "e6e9384e54da2bf3d2f4d8a808dc2838",
+      "filepath": "lib/components/Typography/docs/index.mdx",
+      "link": "https://github.com/simonschwartz/nasa-1975/edit/master/lib/components/Typography/docs/index.mdx",
+      "slug": "lib-components-typography-docs-index",
+      "route": "/lib-components-typography-docs-index",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "typography",
+          "value": "Typography"
+        },
+        {
+          "depth": 2,
+          "slug": "helvetica",
+          "value": "Helvetica"
+        },
+        {
+          "depth": 2,
+          "slug": "garamond",
+          "value": "Garamond"
+        }
+      ]
+    },
+    "lib/components/WormLogo/docs/index.mdx": {
+      "name": "The NASA Logotype",
+      "id": "28a390285164dc3a642049140da92dd7",
+      "filepath": "lib/components/WormLogo/docs/index.mdx",
+      "link": "https://github.com/simonschwartz/nasa-1975/edit/master/lib/components/WormLogo/docs/index.mdx",
+      "slug": "lib-components-worm-logo-docs-index",
+      "route": "/lib-components-worm-logo-docs-index",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "the-nasa-logotype",
+          "value": "The NASA Logotype"
+        }
+      ]
+    }
+  }
+}

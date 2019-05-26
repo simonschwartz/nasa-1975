@@ -1,0 +1,73 @@
+---
+name: Typography
+---
+
+import  { TypographyTheme, Heading, Text, FONT_FAMILY_GARAMOND, FONT_FAMILY_HELVETICA } from '../'
+
+# Typography
+
+Typography and typographic design are the "architecture" of any publication. Based on the structure of typography, the various elements in a publication fall into their logical locations and relationships, forming in the end a harmonious sequence of visual events.
+
+## Helvetica
+
+Helvetica is the most important family of type in the NASA Unified Visual Communications System. Helvetica Light is used in combination with the logotype to form the fundamental elements of identification.
+
+In addition , this typeface can be used in numerous media and in a variety of situations to create a clean and contemporary visual program. The cursive san-serif letterforms make it extremely legible, even at very small sizes.
+
+Headings which accompany Helvetica Light text settings are set in Helvetica Medium. In certain situations Helvetica
+Bold may be an appropriate alternative. Headings are set in upper and lower case.
+
+<TypographyTheme fontFamily={FONT_FAMILY_HELVETICA}>
+    <Heading level={1} size="md">Heading Level 1</Heading>
+    <Heading level={1} size="lg" fontFamily={FONT_FAMILY_GARAMOND}>Heading Level 2</Heading>
+    <Heading level={1} size="sm">Heading Level 3</Heading>
+    <Text>Hello world</Text>
+    <Text weight="light">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        abcdefghijklmnopqrstuvwxyz
+        1234567890$(&?!%.,:;-)
+    </Text>
+    <Text weight="medium">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        abcdefghijklmnopqrstuvwxyz
+        1234567890$(&?!%.,:;-)
+    </Text>
+</TypographyTheme>
+
+## Garamond
+
+Garamond is perhaps the finest of the "classical" typefaces. It has stood the test of time and proved itself to be as useful in contemporary design as it has been in more traditional applications.
+
+The main virtues of Garamond include superior readability, handsome character, a distinctive Italic, and certain special refinements such as old style numerals.
+
+Garamond is ideal for high quality publications or those of a more permanent nature. It functions very well in large volume settings and will sustain reader attention.
+
+Headings may be set in Helvetica Medium or Garamond Bold. Garamond Bold is not a particularly heavy weight and the designer must compensate by increasing the size of the headings or by using space around them. 
+
+<TypographyTheme fontFamily={FONT_FAMILY_GARAMOND}>
+    <Heading level={1} size="md">Heading Level 1</Heading>
+    <Heading level={1} size="md" fontFamily={FONT_FAMILY_HELVETICA}>Heading Level 2</Heading>
+    <Heading level={1} size="md">Heading Level 3</Heading>
+    <Text>Hello world</Text>
+    <Text weight="light">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        abcdefghijklmnopqrstuvwxyz
+        1234567890$(&?!%.,:;-)
+    </Text>
+    <Text weight="medium">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        abcdefghijklmnopqrstuvwxyz
+        1234567890$(&?!%.,:;-)
+    </Text>
+</TypographyTheme>
+
+
+
+
+
+
+
+
+
+
+
