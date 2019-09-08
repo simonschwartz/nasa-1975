@@ -2,37 +2,41 @@
 
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs";
-import NASA1975Story from "../lib/components/NASA1975/NASA1975.story.js";
-import WormLogoStory from "../lib/components/WormLogo/WormLogo.story.js";
-import LoaderStory from "../lib/components/Loader/Loader.story.js";
-import HeadingStory from "../lib/components/Heading/Heading.story.js";
-import AgencyNameStory from "../lib/components/AgencyName/AgencyName.story.js";
-import LogoTypeStory from "../lib/components/LogoType/LogoType.story.js";
-import StemLogoStory from "../lib/components/StemLogo/StemLogo.story.js";
-import ArticleAuthorStory from "../lib/components/ArticleAuthor/ArticleAuthor.story.js";
-import NewsReleaseStory from "../lib/components/NewsRelease/NewsRelease.story.js";
+import WormLogo from "../lib/components/WormLogo/";
+import { NASA_RED, NASA_BLACK, NASA_WHITE, NASA_GREY } from '../lib/components/Colors/';
 
-// Setup Components section
-const componentStories = storiesOf("Components", module);
-componentStories.addDecorator(withKnobs);
+const commonStyles = { padding: "3rem" };
+const DarkBackground = ({ children }) => <div style={{ background: NASA_BLACK, ...commonStyles }}>{children}</div>;
+const LightBackground = ({ children }) => <div style={{ background: "#DDDDDD", ...commonStyles }}>{children}</div>;
+const WhiteBackground = ({ children }) => <div style={{ background: NASA_WHITE, ...commonStyles }}>{children}</div>;
+const MediumBackground = ({ children }) => <div style={{ background: NASA_GREY, ...commonStyles }}>{children}</div>;
 
-componentStories.add("WormLogo", () => <WormLogoStory />);
-componentStories.add("NASA1975", () => <NASA1975Story />);
-componentStories.add("Loader", () => <LoaderStory />);
-componentStories.add("Heading", () => <HeadingStory />);
-componentStories.add("AgencyName", () => <AgencyNameStory />);
-componentStories.add("ArticleAuthor", () => <ArticleAuthorStory />);
+const restProps = {
+    style: {
+        margin: '1rem auto 1rem auto',
+        display: 'block',
+        maxWidth: '500px',
+    }
+};
 
-// Setup Modules section
-const modulesStories = storiesOf("Modules", module);
-modulesStories.addDecorator(withKnobs);
-
-modulesStories.add("LogoType", () => <LogoTypeStory />);
-modulesStories.add("StemLogo", () => <StemLogoStory />);
-
-// Setup Templates section
-const templateStories = storiesOf("Templates", module);
-templateStories.addDecorator(withKnobs);
-
-templateStories.add("NewsRelease", () => <NewsReleaseStory />);
+storiesOf('Worm Logo', module)
+    .addParameters({ component: WormLogo, componentSubtitle: "The NASA Logotype" })
+    .add('Overview', () => <WormLogo {...restProps} />)
+    .add('on white background', () => (
+        <WhiteBackground>
+            <WormLogo color={NASA_BLACK} {...restProps} />
+            <WormLogo color={NASA_RED} {...restProps} />
+        </WhiteBackground>))
+    .add('on light background', () => (
+        <LightBackground>
+            <WormLogo color={NASA_BLACK} {...restProps} />
+        </LightBackground>))
+    .add('on dark background', () => (
+        <DarkBackground>
+            <WormLogo color={NASA_WHITE} {...restProps} />
+        </DarkBackground>))
+    .add('on medium background', () => (
+        <MediumBackground>
+            <WormLogo color={NASA_BLACK} {...restProps} />
+            <WormLogo color={NASA_WHITE} {...restProps} />
+        </MediumBackground>));

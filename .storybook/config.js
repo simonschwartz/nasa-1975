@@ -1,3 +1,3 @@
-import { configure } from '@storybook/react';
+import { configure, addDecorator } from '@storybook/react';
 
 configure(require.context('../stories', true, /\.stories\.(js|mdx)$/), module);
