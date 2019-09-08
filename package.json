@@ -10,8 +10,8 @@
   "scripts": {
     "build-components": "babel lib -d build --ignore spec.js,test.js,story.js --copy-files",
     "test": "jest",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o storybook",
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "build-storybook": "build-storybook",
     "components-update-patch": "npm version patch -m 'Update to %s'",
     "components-update-minor": "npm version minor -m 'Update to %s'",
     "components-update-major": "npm version major -m 'Update to %s'"
@@ -19,28 +19,31 @@
   "author": "Simon Schwartz",
   "license": "ISC",
   "devDependencies": {
-    "@storybook/addon-actions": "^3.4.5",
-    "@storybook/addon-info": "^3.4.5",
-    "@storybook/addon-knobs": "^3.4.5",
-    "@storybook/addon-links": "^3.4.5",
-    "@storybook/addons": "^3.4.5",
-    "@storybook/react": "^3.4.5",
+    "@storybook/addon-actions": "5.2.0-rc.8",
+    "@storybook/addon-docs": "5.2.0-rc.8",
+    "@storybook/addon-info": "5.2.0-rc.8",
+    "@storybook/addon-knobs": "5.2.0-rc.8",
+    "@storybook/addon-links": "5.2.0-rc.8",
+    "@storybook/addons": "5.2.0-rc.8",
+    "@storybook/react": "5.2.0-rc.8",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "install": "^0.11.0",
     "jest": "^22.4.4",
-    "npm": "^6.0.1",
+    "npm": "^6.11.3",
     "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-test-renderer": "^16.3.2"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-test-renderer": "^16.9.0"
   },
   "jest": {
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
     }
-  }
+  },
+  "dependencies": {}
 }
