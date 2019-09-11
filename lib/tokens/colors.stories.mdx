@@ -1,0 +1,23 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { NASA_RED, NASA_GREY, NASA_DARK, NASA_LIGHT } from "./";
+
+<Meta title="Colors" />
+
+# Some header
+
+And markdown here
+
+<Story name="positive">
+  <div style={{backgroundColor: NASA_RED, height: '200px', width: '200px'}}></div>
+</Story>
+
+Some more stuff
+
+<Preview>
+  <Story name="negative">
+    <div>
+      <p>Hello world</p>
+      <div style={{backgroundColor: NASA_RED, height: '200px', width: '200px'}}></div>
+    </div>
+  </Story>
+</Preview>
