@@ -1,0 +1,73 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import WormLogo from '.';
+import { NASA_RED, NASA_DARK, NASA_LIGHT, NASA_GREY } from '../../tokens';
+
+<Meta title="Worm Logo" component={WormLogo} />
+
+# Worm Logo
+
+This logotype is the central element in NASA's visual communications system. Through consistent and
+repetitive use as a signature device and design element in all of NASA's visual communications, the
+logotype becomes a visual shorthand which identifies the Agency and symbol ically embodies its
+activities, achievements and goals.
+
+In the logotype, the letters N-A-S-A are reduced to their most simplified form. The strokes are all
+of one width, evoking the qualities of unity and technical precision. Elimination of cross-strokes
+in the two "A" letters imparts a vertical thrust to the logotype and lends it a quality of
+uniqueness and contemporary character.
+
+<Story name="Overview">
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <WormLogo style={{ maxWidth: '30rem', marginBottom: '2rem' }} />
+        <WormLogo style={{ maxWidth: '20rem', marginBottom: '2rem' }} />
+        <WormLogo style={{ maxWidth: '12rem' }} />
+    </div>
+</Story>
+
+Dark or Red on white background
+
+<Preview>
+    <Story name="On White Background">
+        <div style={{ background: 'white' }}>
+            <WormLogo theme="red" style={{ maxWidth: '20rem', marginBottom: '2rem' }} />
+            <WormLogo theme="dark" style={{ maxWidth: '20rem' }} />
+        </div>
+    </Story>
+</Preview>
+
+Only white on dark background
+
+<Preview>
+    <Story name="On Dark Background">
+        <div style={{ background: 'black' }}>
+            <WormLogo theme="light" style={{ maxWidth: '20rem' }} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="On Light Background">
+        <div style={{ background: '#EEEEEE' }}>
+            <WormLogo theme="dark" style={{ maxWidth: '20rem' }} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="On Medium Background">
+        <div style={{ background: NASA_GREY }}>
+            <WormLogo theme="light" style={{ maxWidth: '20rem', marginBottom: '2rem' }} />
+            <WormLogo theme="dark" style={{ maxWidth: '20rem' }} />
+        </div>
+    </Story>
+</Preview>
+
+### API
+
+```javascript
+import { WormLogo } from 'nasa-1975';
+```
+
+<Props of={WormLogo} />
+
+Any other properties supplied will be spread to the root element.

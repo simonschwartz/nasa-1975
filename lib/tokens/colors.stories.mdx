@@ -1,23 +1,34 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-import { NASA_RED, NASA_GREY, NASA_DARK, NASA_LIGHT } from "./";
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { NASA_RED, NASA_GREY, NASA_DARK, NASA_LIGHT } from './';
+import Typography from '../components/Typography';
 
 <Meta title="Colors" />
 
-# Some header
+# Colors
 
 And markdown here
 
-<Story name="positive">
-  <div style={{backgroundColor: NASA_RED, height: '200px', width: '200px'}}></div>
+<Story name="Red">
+    <section>
+        <div style={{ backgroundColor: NASA_RED, height: '200px', width: '100%' }}></div>
+        <Typography tag="p">NASA Red #E3016A</Typography>
+    </section>
 </Story>
 
-Some more stuff
+<Story name="Dark">
+    <div style={{ backgroundColor: NASA_DARK, height: '200px', width: '100%' }}></div>
+</Story>
 
-<Preview>
-  <Story name="negative">
-    <div>
-      <p>Hello world</p>
-      <div style={{backgroundColor: NASA_RED, height: '200px', width: '200px'}}></div>
-    </div>
-  </Story>
-</Preview>
+<Story name="Light">
+    <div style={{ backgroundColor: NASA_LIGHT, height: '200px', width: '100%' }}></div>
+</Story>
+
+<Story name="Grey">
+    <div style={{ backgroundColor: NASA_GREY, height: '200px', width: '100%' }}></div>
+</Story>
+
+### API
+
+```javascript
+import { NASA_RED, NASA_GREY, NASA_DARK, NASA_LIGHT } from 'nasa-1975';
+```

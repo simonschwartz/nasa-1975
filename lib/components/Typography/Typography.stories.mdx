@@ -1,0 +1,41 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Typography from './';
+
+<Meta title="Typography" component={Typography} />
+
+# Typography
+
+To identify the agency, as a total entity, the NASA logotype is shown in conjunction with the full
+agency name (National Aeronautics and Space Administration) as shown below.
+
+The size of the agency name should relate to the size of the logotype as indicated.
+
+<Preview>
+    <Story name="Overview">
+        <div>
+            <Typography tag="h2">abcdefghijklmnopqrstuvwxyz</Typography>
+            <Typography tag="h2" weight="medium">
+                abcdefghijklmnopqrstuvwxyz
+            </Typography>
+            <Typography tag="h2" weight="medium" theme="light">
+                abcdefghijklmnopqrstuvwxyz
+            </Typography>
+            <Typography tag="h2" size="xl" weight="medium">
+                abcdefghijklmnopqrstuvwxyz
+            </Typography>
+            <Typography tag="h2" size="sm" weight="medium">
+                abcdefghijklmnopqrstuvwxyz
+            </Typography>
+        </div>
+    </Story>
+</Preview>
+
+### API
+
+```javascript
+import { Typography } from 'nasa-1975';
+```
+
+<Props of={Typography} />
+
+Any other properties supplied will be spread to the root element.
