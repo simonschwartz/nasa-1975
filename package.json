@@ -8,7 +8,7 @@
         "url": "https://github.com/simonschwartz/nasa-1975.git"
     },
     "scripts": {
-        "build-components": "babel lib -d build --ignore spec.js,test.js,story.js --copy-files",
+        "build-components": "babel lib -d build --ignore test.js,stories.mdx",
         "test": "jest",
         "lint": "./node_modules/.bin/eslint ./lib",
         "storybook": "start-storybook -p 6006 -c .storybook",
@@ -25,6 +25,7 @@
         "@storybook/addon-docs": "5.2.0-rc.8",
         "@storybook/addons": "5.2.0-rc.8",
         "@storybook/react": "5.2.0-rc.8",
+        "@storybook/theming": "^5.2.0-rc.8",
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.3",
         "babel-eslint": "^10.0.3",
