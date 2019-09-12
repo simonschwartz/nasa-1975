@@ -8,4 +8,4 @@ storybook
 storybook-static
 stories
 .DS_Store
-__mocks__
+jest.config.js

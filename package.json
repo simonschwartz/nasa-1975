@@ -42,6 +42,7 @@
         "eslint-plugin-react": "^7.14.3",
         "eslint-plugin-standard": "^4.0.1",
         "jest": "^22.4.4",
+        "jest-emotion": "^10.0.17",
         "npm": "^6.11.3",
         "prop-types": "^15.6.1",
         "react": "^16.9.0",

@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StemLogo component should correctly spread additional props to root element 1`] = `
+.emotion-1 {
+  display: block;
+}
+
+.emotion-0 {
+  white-space: nowrap;
+}
+
+.emotion-3 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+}
+
+<h1
+  className="emotion-3"
+  style={
+    Object {
+      "width": "200px",
+    }
+  }
+>
+  <span>
+    <span
+      className="emotion-1"
+    >
+      National 
+      <span
+        className="emotion-0"
+      >
+        Aeronautics and
+      </span>
+    </span>
+    <span
+      className="emotion-1"
+    >
+      Space Administration
+    </span>
+  </span>
+</h1>
+`;
+
+exports[`StemLogo component should render correctly given incorrect heading levels 1`] = `
+.emotion-1 {
+  display: block;
+}
+
+.emotion-0 {
+  white-space: nowrap;
+}
+
+.emotion-3 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+}
+
+<h1
+  className="emotion-3"
+>
+  <span>
+    <span
+      className="emotion-1"
+    >
+      National 
+      <span
+        className="emotion-0"
+      >
+        Aeronautics and
+      </span>
+    </span>
+    <span
+      className="emotion-1"
+    >
+      Space Administration
+    </span>
+  </span>
+</h1>
+`;
+
+exports[`StemLogo component should render correctly given incorrect heading levels 2`] = `
+.emotion-1 {
+  display: block;
+}
+
+.emotion-0 {
+  white-space: nowrap;
+}
+
+.emotion-3 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+}
+
+<h1
+  className="emotion-3"
+>
+  <span>
+    <span
+      className="emotion-1"
+    >
+      National 
+      <span
+        className="emotion-0"
+      >
+        Aeronautics and
+      </span>
+    </span>
+    <span
+      className="emotion-1"
+    >
+      Space Administration
+    </span>
+  </span>
+</h1>
+`;
+
+exports[`StemLogo component should render correctly given incorrect prop values 1`] = `
+.emotion-1 {
+  display: block;
+}
+
+.emotion-0 {
+  white-space: nowrap;
+}
+
+.emotion-3 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1;
+  margin: 0;
+}
+
+<h1
+  className="emotion-3"
+>
+  <span>
+    <span
+      className="emotion-1"
+    >
+      National 
+      <span
+        className="emotion-0"
+      >
+        Aeronautics and
+      </span>
+    </span>
+    <span
+      className="emotion-1"
+    >
+      Space Administration
+    </span>
+  </span>
+</h1>
+`;
+
+exports[`StemLogo component should render correctly given no props 1`] = `
+.emotion-1 {
+  display: block;
+}
+
+.emotion-0 {
+  white-space: nowrap;
+}
+
+.emotion-3 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+}
+
+<h1
+  className="emotion-3"
+>
+  <span>
+    <span
+      className="emotion-1"
+    >
+      National 
+      <span
+        className="emotion-0"
+      >
+        Aeronautics and
+      </span>
+    </span>
+    <span
+      className="emotion-1"
+    >
+      Space Administration
+    </span>
+  </span>
+</h1>
+`;
+
+exports[`StemLogo component should render correctly given props {"headingLevel":1,"size":"sm","stacked":true,"centerName":"John F. Kennedy Space Center"} 1`] = `
+.emotion-5 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.emotion-0 {
+  display: block;
+}
+
+.emotion-4 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+  display: block;
+  margin-top: 0.7rem;
+}
+
+<h1
+  className="emotion-5"
+>
+  <span>
+    <span
+      className="emotion-0"
+    >
+      National
+    </span>
+    <span
+      className="emotion-0"
+    >
+      Aeronautics and
+    </span>
+    <span
+      className="emotion-0"
+    >
+      Space
+    </span>
+    <span
+      className="emotion-0"
+    >
+      Administration
+    </span>
+  </span>
+  <span
+    className="emotion-4"
+  >
+    John F. Kennedy Space Center
+  </span>
+</h1>
+`;
+
+exports[`StemLogo component should render correctly given props {"headingLevel":2,"theme":"light","size":"xs"} 1`] = `
+.emotion-3 {
+  color: #FFFFFF;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.emotion-1 {
+  display: block;
+}
+
+.emotion-0 {
+  white-space: nowrap;
+}
+
+<h2
+  className="emotion-3"
+>
+  <span>
+    <span
+      className="emotion-1"
+    >
+      National 
+      <span
+        className="emotion-0"
+      >
+        Aeronautics and
+      </span>
+    </span>
+    <span
+      className="emotion-1"
+    >
+      Space Administration
+    </span>
+  </span>
+</h2>
+`;
+
+exports[`StemLogo component should render correctly given props {"headingLevel":3,"size":"lg"} 1`] = `
+.emotion-1 {
+  display: block;
+}
+
+.emotion-0 {
+  white-space: nowrap;
+}
+
+.emotion-3 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+}
+
+<h3
+  className="emotion-3"
+>
+  <span>
+    <span
+      className="emotion-1"
+    >
+      National 
+      <span
+        className="emotion-0"
+      >
+        Aeronautics and
+      </span>
+    </span>
+    <span
+      className="emotion-1"
+    >
+      Space Administration
+    </span>
+  </span>
+</h3>
+`;
+
+exports[`StemLogo component should render correctly given props {"headingLevel":4,"theme":"dark","size":"xl","stacked":true} 1`] = `
+.emotion-0 {
+  display: block;
+}
+
+.emotion-4 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 0;
+}
+
+<h4
+  className="emotion-4"
+>
+  <span>
+    <span
+      className="emotion-0"
+    >
+      National
+    </span>
+    <span
+      className="emotion-0"
+    >
+      Aeronautics and
+    </span>
+    <span
+      className="emotion-0"
+    >
+      Space
+    </span>
+    <span
+      className="emotion-0"
+    >
+      Administration
+    </span>
+  </span>
+</h4>
+`;
+
+exports[`StemLogo component should render correctly given props {"headingLevel":5,"size":"md","theme":"red","centerName":"John F. Kennedy Space Center"} 1`] = `
+.emotion-1 {
+  display: block;
+}
+
+.emotion-0 {
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.emotion-3 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1;
+  margin: 0;
+  display: block;
+  margin-top: 0.75rem;
+}
+
+<h5
+  className="emotion-4"
+>
+  <span>
+    <span
+      className="emotion-1"
+    >
+      National 
+      <span
+        className="emotion-0"
+      >
+        Aeronautics and
+      </span>
+    </span>
+    <span
+      className="emotion-1"
+    >
+      Space Administration
+    </span>
+  </span>
+  <span
+    className="emotion-3"
+  >
+    John F. Kennedy Space Center
+  </span>
+</h5>
+`;
