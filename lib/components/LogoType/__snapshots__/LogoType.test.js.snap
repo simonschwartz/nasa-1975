@@ -15,6 +15,7 @@ exports[`LogoType component should correctly spread additional props to root ele
 }
 
 .emotion-4 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 1.75rem;
@@ -100,6 +101,7 @@ exports[`LogoType component should render correctly given incorrect heading leve
 }
 
 .emotion-4 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 1.75rem;
@@ -179,6 +181,7 @@ exports[`LogoType component should render correctly given incorrect heading leve
 }
 
 .emotion-4 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 1.75rem;
@@ -254,9 +257,10 @@ exports[`LogoType component should render correctly given incorrect prop values 
 }
 
 .emotion-5 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
 }
@@ -338,6 +342,7 @@ exports[`LogoType component should render correctly given no props 1`] = `
 }
 
 .emotion-4 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 1.75rem;
@@ -409,6 +414,7 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 }
 
 .emotion-5 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 1.25rem;
@@ -573,6 +579,7 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 }
 
 .emotion-6 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 2rem;
@@ -581,11 +588,13 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 }
 
 .emotion-5 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
   margin: 0;
+  margin-bottom: 1rem;
   display: block;
   margin-top: 0.8rem;
 }
@@ -672,6 +681,7 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 }
 
 .emotion-4 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 1.75rem;
@@ -751,6 +761,7 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 }
 
 .emotion-5 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 1.75rem;
@@ -759,11 +770,13 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 }
 
 .emotion-4 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 1;
   margin: 0;
+  margin-bottom: 1rem;
   display: block;
   margin-top: 0.75rem;
 }

@@ -1,15 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Typography component should correctly spread additional props to root element 1`] = `
+exports[`Heading component should correctly spread additional props to root element 1`] = `
 .emotion-0 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-size: 1.75rem;
+  font-weight: 600;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
 }
 
-<p
+<h1
   className="emotion-0"
   style={
     Object {
@@ -18,48 +19,50 @@ exports[`Typography component should correctly spread additional props to root e
   }
 >
   One giant leap for mankind
-</p>
+</h1>
 `;
 
-exports[`Typography component should render correctly given incorrect prop values 1`] = `
+exports[`Heading component should render correctly given incorrect prop values 1`] = `
 .emotion-0 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
 }
 
-<rocket
+<h1
   className="emotion-0"
 >
   Houston we have a problem
-</rocket>
+</h1>
 `;
 
-exports[`Typography component should render correctly given no children 1`] = `null`;
+exports[`Heading component should render correctly given no children 1`] = `null`;
 
-exports[`Typography component should render correctly given no props 1`] = `
+exports[`Heading component should render correctly given no props 1`] = `
 .emotion-0 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-size: 1.75rem;
+  font-weight: 600;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
 }
 
-<p
+<h1
   className="emotion-0"
 >
   One giant leap for mankind
-</p>
+</h1>
 `;
 
-exports[`Typography component should render correctly given props {"size":"lg","tag":"h2","theme":"light"} 1`] = `
+exports[`Heading component should render correctly given props {"size":"lg","level":2,"theme":"light"} 1`] = `
 .emotion-0 {
   color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 2rem;
   line-height: 1;
   margin: 0;
@@ -72,8 +75,9 @@ exports[`Typography component should render correctly given props {"size":"lg","
 </h2>
 `;
 
-exports[`Typography component should render correctly given props {"size":"md","tag":"span","weight":"medium"} 1`] = `
+exports[`Heading component should render correctly given props {"size":"md","level":3,"weight":"medium"} 1`] = `
 .emotion-0 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 600;
   font-size: 1.75rem;
@@ -81,31 +85,33 @@ exports[`Typography component should render correctly given props {"size":"md","
   margin: 0;
 }
 
-<span
+<h3
   className="emotion-0"
 >
   One small step for man...
-</span>
+</h3>
 `;
 
-exports[`Typography component should render correctly given props {"size":"sm","tag":"h1","theme":"dark"} 1`] = `
+exports[`Heading component should render correctly given props {"size":"sm","level":4,"theme":"dark"} 1`] = `
 .emotion-0 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1.25rem;
   line-height: 1;
   margin: 0;
 }
 
-<h1
+<h4
   className="emotion-0"
 >
   One small step for man...
-</h1>
+</h4>
 `;
 
-exports[`Typography component should render correctly given props {"size":"xl","tag":"h1","weight":"light"} 1`] = `
+exports[`Heading component should render correctly given props {"size":"xl","level":1,"weight":"light"} 1`] = `
 .emotion-0 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
@@ -120,13 +126,165 @@ exports[`Typography component should render correctly given props {"size":"xl","
 </h1>
 `;
 
-exports[`Typography component should render correctly given props {"size":"xs","weight":"medium"} 1`] = `
+exports[`Heading component should render correctly given props {"size":5,"weight":"medium"} 1`] = `
 .emotion-0 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
+}
+
+<h1
+  className="emotion-0"
+>
+  One small step for man...
+</h1>
+`;
+
+exports[`Text component should correctly spread additional props to root element 1`] = `
+.emotion-0 {
+  color: #000000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+<p
+  className="emotion-0"
+  style={
+    Object {
+      "width": "200px",
+    }
+  }
+>
+  One giant leap for mankind
+</p>
+`;
+
+exports[`Text component should render correctly given incorrect prop values 1`] = `
+.emotion-0 {
+  color: #000000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+<houston
+  className="emotion-0"
+>
+  Houston we have a problem
+</houston>
+`;
+
+exports[`Text component should render correctly given no children 1`] = `null`;
+
+exports[`Text component should render correctly given no props 1`] = `
+.emotion-0 {
+  color: #000000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+<p
+  className="emotion-0"
+>
+  One giant leap for mankind
+</p>
+`;
+
+exports[`Text component should render correctly given props {"size":"lg","tag":"em","theme":"light"} 1`] = `
+.emotion-0 {
+  color: #FFFFFF;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+<em
+  className="emotion-0"
+>
+  One small step for man...
+</em>
+`;
+
+exports[`Text component should render correctly given props {"size":"md","tag":"p","weight":"medium"} 1`] = `
+.emotion-0 {
+  color: #000000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+<p
+  className="emotion-0"
+>
+  One small step for man...
+</p>
+`;
+
+exports[`Text component should render correctly given props {"size":"sm","tag":"Section","theme":"dark"} 1`] = `
+.emotion-0 {
+  color: #000000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+<section
+  className="emotion-0"
+>
+  One small step for man...
+</section>
+`;
+
+exports[`Text component should render correctly given props {"size":"xl","tag":"span","weight":"light"} 1`] = `
+.emotion-0 {
+  color: #000000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+<span
+  className="emotion-0"
+>
+  One small step for man...
+</span>
+`;
+
+exports[`Text component should render correctly given props {"size":5,"weight":"medium"} 1`] = `
+.emotion-0 {
+  color: #000000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 <p

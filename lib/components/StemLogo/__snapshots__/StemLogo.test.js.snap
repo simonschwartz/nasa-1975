@@ -27,9 +27,10 @@ exports[`StemLogo component should correctly spread additional props to root ele
 }
 
 .emotion-1 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
   font-size: 5.5rem;
@@ -110,9 +111,10 @@ exports[`StemLogo component should render correctly given incorrect prop values 
 }
 
 .emotion-1 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
   font-size: 5.5rem;
@@ -188,9 +190,10 @@ exports[`StemLogo component should render correctly given no props 1`] = `
 }
 
 .emotion-1 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
   font-size: 5.5rem;
@@ -271,7 +274,7 @@ exports[`StemLogo component should render correctly given props {"headingLevel":
   color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
   font-size: 5.5rem;
@@ -347,9 +350,10 @@ exports[`StemLogo component should render correctly given props {"headingLevel":
 }
 
 .emotion-1 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
   font-size: 7rem;
@@ -425,9 +429,10 @@ exports[`StemLogo component should render correctly given props {"headingLevel":
 }
 
 .emotion-1 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
   font-size: 5.5rem;
@@ -503,9 +508,10 @@ exports[`StemLogo component should render correctly given props {"headingLevel":
 }
 
 .emotion-1 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
   font-size: 4.4rem;
@@ -581,9 +587,10 @@ exports[`StemLogo component should render correctly given props {"headingLevel":
 }
 
 .emotion-1 {
+  color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
   margin: 0;
   font-size: 5.5rem;

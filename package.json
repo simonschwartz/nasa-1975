@@ -9,7 +9,7 @@
     },
     "scripts": {
         "build-components": "babel lib -d build --ignore test.js,stories.mdx",
-        "test": "jest",
+        "test": "jest --silent",
         "lint": "./node_modules/.bin/eslint ./lib",
         "storybook": "start-storybook -p 6006 -c .storybook",
         "build-storybook": "build-storybook",
@@ -17,10 +17,12 @@
         "components-update-minor": "npm version minor -m 'Update to %s'",
         "components-update-major": "npm version major -m 'Update to %s'"
     },
-    "author": "Simon Schwartz",
+    "author": {
+        "name": "Simon Schwartz",
+        "url": "https://github.com/simonschwartz"
+    },
     "license": "ISC",
     "devDependencies": {
-        "@emotion/babel-preset-css-prop": "^10.0.17",
         "@emotion/core": "^10.0.17",
         "@storybook/addon-docs": "5.2.0-rc.8",
         "@storybook/addons": "5.2.0-rc.8",
@@ -37,10 +39,8 @@
         "eslint-config-prettier": "^6.3.0",
         "eslint-plugin-emotion": "^10.0.14",
         "eslint-plugin-jest": "^22.17.0",
-        "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-prettier": "^3.1.0",
         "eslint-plugin-react": "^7.14.3",
-        "eslint-plugin-standard": "^4.0.1",
         "jest": "^22.4.4",
         "jest-emotion": "^10.0.17",
         "npm": "^6.11.3",
@@ -48,6 +48,9 @@
         "react": "^16.9.0",
         "react-dom": "^16.9.0",
         "react-test-renderer": "^16.9.0"
+    },
+    "peerDependencies": {
+        "@emotion/core": "^10.0.17"
     },
     "dependencies": {}
 }

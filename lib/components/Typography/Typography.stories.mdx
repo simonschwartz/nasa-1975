@@ -1,7 +1,7 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
-import Typography from './';
+import { Heading, Text } from './';
 
-<Meta title="Typography" component={Typography} />
+<Meta title="Typography" />
 
 # Typography
 
@@ -13,19 +13,19 @@ The size of the agency name should relate to the size of the logotype as indicat
 <Preview>
     <Story name="Overview">
         <div>
-            <Typography tag="h2">abcdefghijklmnopqrstuvwxyz</Typography>
-            <Typography tag="h2" weight="medium">
+            <Heading level={1}>abcdefghijklmnopqrstuvwxyz</Heading>
+            <Heading level={2} weight="medium">
                 abcdefghijklmnopqrstuvwxyz
-            </Typography>
-            <Typography tag="h2" weight="medium" theme="light">
+            </Heading>
+            <Heading level={2} weight="medium" theme="light">
                 abcdefghijklmnopqrstuvwxyz
-            </Typography>
-            <Typography tag="h2" size="xl" weight="medium">
+            </Heading>
+            <Heading level={3} size="xl" weight="medium">
                 abcdefghijklmnopqrstuvwxyz
-            </Typography>
-            <Typography tag="h2" size="sm" weight="medium">
+            </Heading>
+            <Text tag="section" size="sm" weight="medium">
                 abcdefghijklmnopqrstuvwxyz
-            </Typography>
+            </Text>
         </div>
     </Story>
 </Preview>
@@ -33,9 +33,15 @@ The size of the agency name should relate to the size of the logotype as indicat
 ### API
 
 ```javascript
-import { Typography } from 'nasa-1975';
+import { Heading, Text } from 'nasa-1975';
 ```
 
-<Props of={Typography} />
+#### Heading props
+
+<Props of={Heading} />
+
+#### Text props
+
+<Props of={Text} />
 
 Any other properties supplied will be spread to the root element.
