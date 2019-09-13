@@ -4,10 +4,10 @@ exports[`Heading component should correctly spread additional props to root elem
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
-  margin: 0;
 }
 
 <h1
@@ -26,10 +26,10 @@ exports[`Heading component should render correctly given incorrect prop values 1
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
-  margin: 0;
 }
 
 <h1
@@ -45,10 +45,10 @@ exports[`Heading component should render correctly given no props 1`] = `
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
-  margin: 0;
 }
 
 <h1
@@ -62,10 +62,10 @@ exports[`Heading component should render correctly given props {"size":"lg","lev
 .emotion-0 {
   color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
-  margin: 0;
 }
 
 <h2
@@ -79,10 +79,10 @@ exports[`Heading component should render correctly given props {"size":"md","lev
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
 }
 
 <h3
@@ -96,10 +96,10 @@ exports[`Heading component should render correctly given props {"size":"sm","lev
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1;
-  margin: 0;
 }
 
 <h4
@@ -113,10 +113,10 @@ exports[`Heading component should render correctly given props {"size":"xl","lev
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 1;
-  margin: 0;
 }
 
 <h1
@@ -130,10 +130,10 @@ exports[`Heading component should render correctly given props {"size":5,"weight
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
-  margin: 0;
 }
 
 <h1
@@ -147,11 +147,10 @@ exports[`Text component should correctly spread additional props to root element
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-size: 1.25rem;
-  line-height: 1;
   margin: 0;
-  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 <p
@@ -170,11 +169,10 @@ exports[`Text component should render correctly given incorrect prop values 1`] 
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1;
   margin: 0;
-  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 <houston
@@ -190,11 +188,10 @@ exports[`Text component should render correctly given no props 1`] = `
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-size: 1.25rem;
-  line-height: 1;
   margin: 0;
-  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 <p
@@ -208,11 +205,10 @@ exports[`Text component should render correctly given props {"size":"lg","tag":"
 .emotion-0 {
   color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
+  margin: 0;
+  font-weight: 400;
   font-size: 2rem;
   line-height: 1;
-  margin: 0;
-  margin-bottom: 1rem;
 }
 
 <em
@@ -226,11 +222,10 @@ exports[`Text component should render correctly given props {"size":"md","tag":"
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
-  margin-bottom: 1rem;
 }
 
 <p
@@ -244,11 +239,10 @@ exports[`Text component should render correctly given props {"size":"sm","tag":"
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
+  margin: 0;
+  font-weight: 400;
   font-size: 1.25rem;
   line-height: 1;
-  margin: 0;
-  margin-bottom: 1rem;
 }
 
 <section
@@ -262,11 +256,10 @@ exports[`Text component should render correctly given props {"size":"xl","tag":"
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
+  margin: 0;
+  font-weight: 400;
   font-size: 2.5rem;
   line-height: 1;
-  margin: 0;
-  margin-bottom: 1rem;
 }
 
 <span
@@ -280,11 +273,10 @@ exports[`Text component should render correctly given props {"size":5,"weight":"
 .emotion-0 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1;
   margin: 0;
-  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 <p

@@ -2,7 +2,7 @@
 
 exports[`LogoType component should correctly spread additional props to root element 1`] = `
 .emotion-0 {
-  max-width: 270px;
+  max-width: 15.5rem;
   height: auto;
 }
 
@@ -17,10 +17,10 @@ exports[`LogoType component should correctly spread additional props to root ele
 .emotion-4 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
 }
 
 <section
@@ -88,7 +88,7 @@ exports[`LogoType component should correctly spread additional props to root ele
 
 exports[`LogoType component should render correctly given incorrect heading levels 1`] = `
 .emotion-0 {
-  max-width: 270px;
+  max-width: 15.5rem;
   height: auto;
 }
 
@@ -103,10 +103,10 @@ exports[`LogoType component should render correctly given incorrect heading leve
 .emotion-4 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
 }
 
 <section>
@@ -168,7 +168,7 @@ exports[`LogoType component should render correctly given incorrect heading leve
 
 exports[`LogoType component should render correctly given incorrect heading levels 2`] = `
 .emotion-0 {
-  max-width: 270px;
+  max-width: 15.5rem;
   height: auto;
 }
 
@@ -183,10 +183,10 @@ exports[`LogoType component should render correctly given incorrect heading leve
 .emotion-4 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
 }
 
 <section>
@@ -252,17 +252,17 @@ exports[`LogoType component should render correctly given incorrect prop values 
 }
 
 .emotion-0 {
-  max-width: 270px;
+  max-width: 15.5rem;
   height: auto;
 }
 
 .emotion-5 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 2rem;
   line-height: 1;
-  margin: 0;
 }
 
 <section>
@@ -329,7 +329,7 @@ exports[`LogoType component should render correctly given incorrect prop values 
 
 exports[`LogoType component should render correctly given no props 1`] = `
 .emotion-0 {
-  max-width: 270px;
+  max-width: 15.5rem;
   height: auto;
 }
 
@@ -344,10 +344,10 @@ exports[`LogoType component should render correctly given no props 1`] = `
 .emotion-4 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
 }
 
 <section>
@@ -409,17 +409,17 @@ exports[`LogoType component should render correctly given no props 1`] = `
 
 exports[`LogoType component should render correctly given props {"headingLevel":1,"size":"sm","stacked":true} 1`] = `
 .emotion-0 {
-  max-width: 190px;
+  max-width: 11rem;
   height: auto;
 }
 
 .emotion-5 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1;
-  margin: 0;
 }
 
 .emotion-1 {
@@ -490,17 +490,17 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 
 exports[`LogoType component should render correctly given props {"headingLevel":2,"theme":"light"} 1`] = `
 .emotion-0 {
-  max-width: 270px;
+  max-width: 15.5rem;
   height: auto;
 }
 
 .emotion-4 {
   color: #FFFFFF;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
 }
 
 .emotion-2 {
@@ -574,27 +574,26 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 }
 
 .emotion-0 {
-  max-width: 300px;
+  max-width: 17.5rem;
   height: auto;
 }
 
 .emotion-6 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 2rem;
   line-height: 1;
-  margin: 0;
 }
 
 .emotion-5 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
-  margin: 0;
-  margin-bottom: 1rem;
   display: block;
   margin-top: 0.8rem;
 }
@@ -668,7 +667,7 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 
 exports[`LogoType component should render correctly given props {"headingLevel":4,"theme":"dark"} 1`] = `
 .emotion-0 {
-  max-width: 270px;
+  max-width: 15.5rem;
   height: auto;
 }
 
@@ -683,10 +682,10 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 .emotion-4 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
 }
 
 <section>
@@ -748,7 +747,7 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 
 exports[`LogoType component should render correctly given props {"headingLevel":5,"size":"md","centerName":"John F. Kennedy Space Center"} 1`] = `
 .emotion-0 {
-  max-width: 270px;
+  max-width: 15.5rem;
   height: auto;
 }
 
@@ -763,20 +762,19 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 .emotion-5 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
 }
 
 .emotion-4 {
   color: #000000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 1;
-  margin: 0;
-  margin-bottom: 1rem;
   display: block;
   margin-top: 0.75rem;
 }
