@@ -574,7 +574,7 @@ exports[`LogoType component should render correctly given props {"headingLevel":
 }
 
 .emotion-0 {
-  max-width: 17.5rem;
+  max-width: 22rem;
   height: auto;
 }
 
@@ -583,7 +583,7 @@ exports[`LogoType component should render correctly given props {"headingLevel":
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
@@ -592,10 +592,10 @@ exports[`LogoType component should render correctly given props {"headingLevel":
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1;
   display: block;
-  margin-top: 0.8rem;
+  margin-top: 0.85rem;
 }
 
 <section>
