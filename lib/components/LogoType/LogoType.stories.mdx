@@ -1,0 +1,66 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import LogoType from './';
+import { NASA_DARK } from '../../tokens';
+
+<Meta title="Logo Type" component={LogoType} />
+
+# Logo Type
+
+To identify the agency, as a total entity, the NASA logotype is shown in conjunction with the full
+agency name (National Aeronautics and Space Administration) as shown below.
+
+The size of the agency name should relate to the size of the logotype as indicated.
+
+<Story name="Overview">
+    <LogoType />
+</Story>
+
+<Preview>
+    <Story name="Dark theme">
+        <LogoType theme="dark" />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Light theme">
+        <LogoType theme="light" />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Red theme">
+        <LogoType theme="red" />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="With center name">
+        <LogoType centerName="John F. Kennedy Space Center" />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Stacked">
+        <LogoType stacked />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Sized">
+        <div>
+            <LogoType theme="dark" size="lg" style={{ marginBottom: '2rem' }} />
+            <LogoType theme="dark" size="md" style={{ marginBottom: '2rem' }} />
+            <LogoType theme="dark" size="sm" />
+        </div>
+    </Story>
+</Preview>
+
+### API
+
+```javascript
+import { LogoType } from 'nasa-1975';
+```
+
+<Props of={LogoType} />
+
+Any other properties supplied will be spread to the root element.

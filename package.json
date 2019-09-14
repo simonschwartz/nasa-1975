@@ -1,46 +1,56 @@
 {
-  "name": "nasa-1975",
-  "version": "1.0.0",
-  "description": "A React design system based on the 1975 NASA Graphics Standards Manual.",
-  "main": "build/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/simonschwartz/nasa-1975.git"
-  },
-  "scripts": {
-    "build-components": "babel lib -d build --ignore spec.js,test.js,story.js --copy-files",
-    "test": "jest",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o storybook",
-    "components-update-patch": "npm version patch -m 'Update to %s'",
-    "components-update-minor": "npm version minor -m 'Update to %s'",
-    "components-update-major": "npm version major -m 'Update to %s'"
-  },
-  "author": "Simon Schwartz",
-  "license": "ISC",
-  "devDependencies": {
-    "@storybook/addon-actions": "^3.4.5",
-    "@storybook/addon-info": "^3.4.5",
-    "@storybook/addon-knobs": "^3.4.5",
-    "@storybook/addon-links": "^3.4.5",
-    "@storybook/addons": "^3.4.5",
-    "@storybook/react": "^3.4.5",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "install": "^0.11.0",
-    "jest": "^22.4.4",
-    "npm": "^6.0.1",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-test-renderer": "^16.3.2"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
-    }
-  }
+    "name": "nasa-1975",
+    "version": "1.0.0",
+    "description": "A React design system based on the 1975 NASA Graphics Standards Manual.",
+    "main": "build/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/simonschwartz/nasa-1975.git"
+    },
+    "scripts": {
+        "build-components": "babel lib -d build --ignore test.js,stories.mdx",
+        "test": "jest --silent",
+        "lint": "./node_modules/.bin/eslint ./lib",
+        "storybook": "start-storybook -p 6006 -c .storybook",
+        "build-storybook": "build-storybook",
+        "components-update-patch": "npm version patch -m 'Update to %s'",
+        "components-update-minor": "npm version minor -m 'Update to %s'",
+        "components-update-major": "npm version major -m 'Update to %s'"
+    },
+    "author": {
+        "name": "Simon Schwartz",
+        "url": "https://github.com/simonschwartz"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "@emotion/core": "^10.0.17",
+        "@storybook/addon-docs": "5.2.0-rc.8",
+        "@storybook/addons": "5.2.0-rc.8",
+        "@storybook/react": "5.2.0-rc.8",
+        "@storybook/theming": "^5.2.0-rc.8",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^7.1.5",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "eslint": "^6.3.0",
+        "eslint-config-prettier": "^6.3.0",
+        "eslint-plugin-emotion": "^10.0.14",
+        "eslint-plugin-jest": "^22.17.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-react": "^7.14.3",
+        "jest": "^22.4.4",
+        "jest-emotion": "^10.0.17",
+        "npm": "^6.11.3",
+        "prop-types": "^15.6.1",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "react-test-renderer": "^16.9.0"
+    },
+    "peerDependencies": {
+        "@emotion/core": "^10.0.17"
+    },
+    "dependencies": {}
 }

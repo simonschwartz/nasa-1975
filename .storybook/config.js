@@ -1,24 +1,22 @@
-import { configure } from "@storybook/react";
-import { setDefaults } from "@storybook/addon-info";
+import { configure, addParameters } from '@storybook/react';
+import { create } from '@storybook/theming';
+import { FONT_FAMILY_DEFAULT } from '../lib/tokens';
 
-setDefaults({
-  header: false,
-  inline: true,
-  maxPropsIntoLine: 1,
-  styles: {
-    infoBody: {
-      border: "none",
-      padding: "0px",
-      borderTop: "1px solid rgb(238, 238, 238)",
-      paddingTop: "20px",
-      marginTop: "25px",
-      boxShadow: "none"
-    }
-  }
+const theme = create({
+    base: 'light',
+    fontBase: FONT_FAMILY_DEFAULT,
+    brandTitle: 'NASA 1975',
+    brandImage: 'https://github.com/simonschwartz/nasa-1975/raw/master/nasa-worm.png',
 });
 
-function loadStories() {
-  require("../stories");
-}
+addParameters({
+    options: {
+        theme,
+        storySort: (a, b) => {
+            if (a[1].id === 'welcome--page') return -1;
+            return a[1].kind === b[1].kind ? 0 : a[1].id.localeCompare(b[1].id);
+        },
+    },
+});
 
-configure(loadStories, module);
+configure(require.context('../lib/', true, /\.stories\.(js|mdx)$/), module);

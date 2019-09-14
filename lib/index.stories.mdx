@@ -1,0 +1,62 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import LogoType from './components/LogoType';
+
+<Meta title="Welcome" />
+
+<LogoType theme="red" size="md" style={{ marginBottom: '2rem' }} />
+
+**Dear Colleagues:**
+
+A driving force and the use of innovative techniques and ideas have brought NASA the image of a
+get-it-done agency, and the record backs up the reputation .
+
+As we move ahead to an even more exciting era in aeronautical research and space exploration, we
+have added a new tool to enhance and symbolize the progressive path we have always followed.
+
+Not as suspenseful as a Command and Service Module splashdown nor as dramatic as a Mariner flyby, it
+is nonetheless of major importance because it is designed to achieve maximum communication of the
+agency's program objectives, both internally and externally.
+
+I think the new logotype is pleasing to the eye and gives a feeling of unity, technological
+precision, thrust and orientation toward the future. Unity, technology, pioneering
+achievement-that's what NASA is all about.
+
+This manual is a reference book for NASA designers. It is the official policy document regarding
+NASA identification (use of logotype), communication in general and sets the tone and level of
+quality for all NASA graphics.
+
+## Getting started
+
+Install the NASA 1975 design system
+
+```
+npm install --save nasa-1975
+```
+
+NASA 1975 has a peer dependency of [@emotion/core](https://www.npmjs.com/package/@emotion/core). If
+your project doesn't already use it, install it with:
+
+```
+npm install --save @emotion/core
+```
+
+### Usage
+
+Here is a quick example to get you started.
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { LogoType } from 'nasa-1975';
+
+function App() {
+  return (
+    <LogoType theme="red" />
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector('#app'));
+
+```
+
+### Interactive demo
