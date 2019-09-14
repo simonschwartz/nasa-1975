@@ -1,6 +1,6 @@
 {
     "name": "nasa-1975",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "A React design system based on the 1975 NASA Graphics Standards Manual.",
     "main": "build/index.js",
     "repository": {
