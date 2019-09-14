@@ -11,7 +11,7 @@ before_deploy:
 deploy:
     - provider: surge
       skip_cleanup: true
-      project: ./storybook/
+      project: ./storybook-static/
       domain: nasa-1975.surge.sh
       on:
           branch: master
