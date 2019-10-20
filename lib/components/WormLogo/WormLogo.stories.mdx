@@ -3,7 +3,6 @@ import WormLogo from '.';
 import { NASA_RED, NASA_DARK, NASA_LIGHT, NASA_GREY } from '../../tokens';
 import { Heading, Text } from '../Typography';
 import StoryContainer from '../../../.storybook/components/StoryContainer';
-import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 
 <Meta title="Worm Logo" />
 
@@ -18,11 +17,11 @@ all of one width, evoking the qualities of unity and technical precision. Elimin
 cross-strokes in the two "A" letters imparts a vertical thrust to the logotype and lends it a
 quality of uniqueness and contemporary character.
 
-<Preview>
-    <Story name="Overview">
-        <WormLogo width="400px" />
-    </Story>
-</Preview>
+<div style={{margin: '3rem 0'}}>
+    <WormLogo style={{display: 'block', margin: '2rem 0', maxWidth: '400px'}} />
+    <WormLogo style={{display: 'block', margin: '2rem 0', maxWidth: '300px'}} />
+    <WormLogo style={{display: 'block', margin: '2rem 0', maxWidth: '200px'}} />
+</div>
 
 ## Use with color
 

@@ -1,5 +1,6 @@
 import { Meta, Story } from '@storybook/addon-docs/blocks';
 import { NASA_RED, NASA_GREY, NASA_DARK, NASA_LIGHT } from './';
+import StoryContainer from '../../.storybook/components/StoryContainer';
 import { Text } from '../components/Typography';
 
 <Meta title="Colors" />
@@ -8,24 +9,17 @@ import { Text } from '../components/Typography';
 
 And markdown here
 
-<Story name="Red">
-    <section>
-        <div style={{ backgroundColor: NASA_RED, height: '200px', width: '100%' }}></div>
-        <Text tag="p">NASA Red #E3016A</Text>
-    </section>
-</Story>
+**Nasa Red** #E3016A
+<StoryContainer background="red" />
 
-<Story name="Dark">
-    <div style={{ backgroundColor: NASA_DARK, height: '200px', width: '100%' }}></div>
-</Story>
+**Nasa Dark** #000000
+<StoryContainer background="dark" />
 
-<Story name="Light">
-    <div style={{ backgroundColor: NASA_LIGHT, height: '200px', width: '100%' }}></div>
-</Story>
+**Nasa Light** #FFFFFF
+<StoryContainer background="light" />
 
-<Story name="Grey">
-    <div style={{ backgroundColor: NASA_GREY, height: '200px', width: '100%' }}></div>
-</Story>
+**Nasa Grey** #767368
+<StoryContainer background="grey" />
 
 ### API
 
