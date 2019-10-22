@@ -1,5 +1,6 @@
 import { Meta, Story, Preview, Props, Test } from '@storybook/addon-docs/blocks';
 import StemLogo from './';
+import StoryContainer from '../../../.storybook/components/StoryContainer';
 
 <Meta title="Stem Logo" component={StemLogo} />
 
@@ -11,41 +12,26 @@ publication title.
 This technique is used only on permanent, regularly published documents, and requires advice from
 the NASA Graphics Coordinator at Headquarters.
 
-<Story name="Overview">
-    <div>
-        <StemLogo title="News" theme="dark" size="lg" style={{ marginBottom: '2rem' }} />
-        <StemLogo title="Comet" theme="dark" size="md" style={{ marginBottom: '2rem' }} />
-        <StemLogo title="Voyager" theme="dark" size="sm" />
-    </div>
-</Story>
+<div style={{margin: '3rem 0'}}>
+    <StemLogo title="Voyager" theme="dark" size="lg" style={{ marginBottom: '2rem' }} />
+    <StemLogo title="Voyager" theme="dark" size="md" style={{ marginBottom: '2rem' }} />
+    <StemLogo title="Voyager" theme="dark" size="sm" />
+</div>
 
-<Preview>
-    <Story name="Dark theme">
-        <StemLogo title="News" theme="dark" />
-    </Story>
-</Preview>
+## Use of colour
 
-<Preview>
-    <Story name="Light theme">
-        <StemLogo title="News" theme="light" />
-    </Story>
-</Preview>
+<StoryContainer style={{ maxWidth: '28rem' }}>
+    <StemLogo title="Voyager" theme="dark" size="sm" />
+</StoryContainer>
 
-<Preview>
-    <Story name="Red theme">
-        <StemLogo title="News" theme="red" />
-    </Story>
-</Preview>
+<StoryContainer style={{ maxWidth: '28rem' }}>
+    <StemLogo title="Voyager" theme="red" size="sm" />
+</StoryContainer>
 
-<Preview>
-    <Story name="Sizes">
-        <div>
-            <StemLogo title="News" size="lg" style={{ marginBottom: '2rem' }} />
-            <StemLogo title="News" size="md" style={{ marginBottom: '2rem' }} />
-            <StemLogo title="News" size="sm" />
-        </div>
-    </Story>
-</Preview>
+<StoryContainer background="dark" style={{ maxWidth: '28rem' }}>
+    <StemLogo title="Voyager" theme="light" size="sm" />
+</StoryContainer>
+
 
 ### API
 

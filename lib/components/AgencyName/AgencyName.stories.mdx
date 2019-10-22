@@ -1,5 +1,6 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import AgencyName from './';
+import StoryContainer from '../../../.storybook/components/StoryContainer';
 
 <Meta title="Agency Name" component={AgencyName} />
 
@@ -11,59 +12,33 @@ inline.
 To identify any of the NASA centers, the full center name is shown in conjunction with the full
 agency name.
 
-<Story name="Overview">
-    <AgencyName centerName="John F. Kennedy Space Center" />
-</Story>
+<div style={{ margin: '3rem 0' }}>
+    <AgencyName size="xl" style={{ marginBottom: '2rem' }} />
+    <AgencyName size="lg" style={{ marginBottom: '2rem' }} />
+    <AgencyName size="md" style={{ marginBottom: '2rem' }} />
+</div>
 
-<Preview>
-    <Story name="Stacked">
-        <AgencyName stacked />
-    </Story>
-</Preview>
+### Stacked
 
-<Preview>
-    <Story name="Sizes without center name">
-        <div>
-            <AgencyName size="xl" style={{ marginBottom: '2rem' }} />
-            <AgencyName size="lg" style={{ marginBottom: '2rem' }} />
-            <AgencyName size="md" style={{ marginBottom: '2rem' }} />
-            <AgencyName size="sm" style={{ marginBottom: '2rem' }} />
-            <AgencyName size="xs" />
-        </div>
-    </Story>
-</Preview>
+<StoryContainer>
+    <AgencyName size="md" stacked />
+</StoryContainer>
 
-<Preview>
-    <Story name="Sizes with center name">
-        <div>
-            <AgencyName
-                size="xl"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-            <AgencyName
-                size="lg"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-            <AgencyName
-                size="md"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-            <AgencyName
-                size="sm"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-            <AgencyName
-                size="xs"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-        </div>
-    </Story>
-</Preview>
+### With Center name
+
+<StoryContainer>
+    <AgencyName size="md" centerName="John F. Kennedy Space Center" />
+</StoryContainer>
+
+### On dark background
+
+<StoryContainer background="dark">
+    <AgencyName size="md" centerName="John F. Kennedy Space Center" theme="light" />
+</StoryContainer>
+
+<StoryContainer background="dark">
+    <AgencyName size="md" centerName="John F. Kennedy Space Center" theme="light" stacked="true" />
+</StoryContainer>
 
 ### API
 

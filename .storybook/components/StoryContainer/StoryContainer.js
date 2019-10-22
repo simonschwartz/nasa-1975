@@ -31,16 +31,20 @@ const containerStyle = backgroundColor => {
         padding: 5rem;
         margin: 2rem 0;
         background: ${backgroundColor};
-        max-width: 20rem;
+        max-width: 19rem;
         border: 1px solid ${borderColor};
     `;
 };
 
-const StoryContainer = ({ background = DEFAULT_BACKGROUND, children }) => {
+const StoryContainer = ({ background = DEFAULT_BACKGROUND, children, ...restProps }) => {
     const { backgroundColor } =
         BACKGROUND_COLORS[background] || BACKGROUND_COLORS[DEFAULT_BACKGROUND];
 
-    return <div css={containerStyle(backgroundColor)}>{children}</div>;
+    return (
+        <div css={containerStyle(backgroundColor)} {...restProps}>
+            {children}
+        </div>
+    );
 };
 
 StoryContainer.propTypes = {

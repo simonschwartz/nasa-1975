@@ -1,6 +1,7 @@
 import { Meta, Story } from '@storybook/addon-docs/blocks';
 import { NASA_RED, NASA_GREY, NASA_DARK, NASA_LIGHT } from './';
 import StoryContainer from '../../.storybook/components/StoryContainer';
+import { ColorSwatchContainer, ColorSwatch } from '../../.storybook/components/ColorSwatch';
 import { Text } from '../components/Typography';
 
 <Meta title="Colors" />
@@ -9,17 +10,12 @@ import { Text } from '../components/Typography';
 
 And markdown here
 
-**Nasa Red** #E3016A
-<StoryContainer background="red" />
-
-**Nasa Dark** #000000
-<StoryContainer background="dark" />
-
-**Nasa Light** #FFFFFF
-<StoryContainer background="light" />
-
-**Nasa Grey** #767368
-<StoryContainer background="grey" />
+<ColorSwatchContainer>
+    <ColorSwatch name="NASA Red" color={NASA_RED} />
+    <ColorSwatch name="NASA Grey" color={NASA_GREY} />
+    <ColorSwatch name="NASA Light" color={NASA_LIGHT} />
+    <ColorSwatch name="NASA Dark" color={NASA_DARK} />
+</ColorSwatchContainer>
 
 ### API
 

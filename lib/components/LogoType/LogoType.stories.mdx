@@ -1,6 +1,7 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import LogoType from './';
 import { NASA_DARK } from '../../tokens';
+import StoryContainer from '../../../.storybook/components/StoryContainer';
 
 <Meta title="Logo Type" component={LogoType} />
 
@@ -11,49 +12,37 @@ agency name (National Aeronautics and Space Administration) as shown below.
 
 The size of the agency name should relate to the size of the logotype as indicated.
 
-<Story name="Overview">
-    <LogoType />
-</Story>
+<div style={{ margin: '3rem 0' }}>
+    <LogoType theme="dark" size="lg" style={{ marginBottom: '2rem' }} />
+    <LogoType theme="dark" size="md" style={{ marginBottom: '2rem' }} />
+    <LogoType theme="dark" size="sm" />
+</div>
 
-<Preview>
-    <Story name="Dark theme">
-        <LogoType theme="dark" />
-    </Story>
-</Preview>
+## Use with color
 
-<Preview>
-    <Story name="Light theme">
-        <LogoType theme="light" />
-    </Story>
-</Preview>
+<StoryContainer>
+    <LogoType theme="dark" />
+</StoryContainer>
 
-<Preview>
-    <Story name="Red theme">
-        <LogoType theme="red" />
-    </Story>
-</Preview>
+<StoryContainer>
+    <LogoType theme="red" />
+</StoryContainer>
 
-<Preview>
-    <Story name="With center name">
-        <LogoType centerName="John F. Kennedy Space Center" />
-    </Story>
-</Preview>
+<StoryContainer background="dark">
+    <LogoType theme="light" />
+</StoryContainer>
 
-<Preview>
-    <Story name="Stacked">
-        <LogoType stacked />
-    </Story>
-</Preview>
+### Stacked
 
-<Preview>
-    <Story name="Sized">
-        <div>
-            <LogoType theme="dark" size="lg" style={{ marginBottom: '2rem' }} />
-            <LogoType theme="dark" size="md" style={{ marginBottom: '2rem' }} />
-            <LogoType theme="dark" size="sm" />
-        </div>
-    </Story>
-</Preview>
+<StoryContainer>
+    <LogoType theme="red" stacked={true} />
+</StoryContainer>
+
+### With center name
+
+<StoryContainer>
+    <LogoType theme="red" centerName="John F. Kennedy Space Center" />
+</StoryContainer>
 
 ### API
 
