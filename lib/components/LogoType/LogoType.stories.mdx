@@ -10,8 +10,6 @@ import StoryContainer from '../../../.storybook/components/StoryContainer';
 To identify the agency, as a total entity, the NASA logotype is shown in conjunction with the full
 agency name (National Aeronautics and Space Administration) as shown below.
 
-The size of the agency name should relate to the size of the logotype as indicated.
-
 <div style={{ margin: '3rem 0' }}>
     <LogoType theme="dark" size="lg" style={{ marginBottom: '2rem' }} />
     <LogoType theme="dark" size="md" style={{ marginBottom: '2rem' }} />
@@ -19,6 +17,10 @@ The size of the agency name should relate to the size of the logotype as indicat
 </div>
 
 ## Use with color
+
+### White Background
+
+Against a white background the logo­type may be shown in NASA red or black.
 
 <StoryContainer>
     <LogoType theme="dark" />
@@ -28,20 +30,72 @@ The size of the agency name should relate to the size of the logotype as indicat
     <LogoType theme="red" />
 </StoryContainer>
 
+### Very Light Value Background
+
+Against a very light background, the logotype should be shown in black.
+
+The one exception to this would be the use of NASA red logotype in very light areas of four-color
+process reproduction.
+
+<StoryContainer background="medium">
+    <LogoType theme="dark" />
+</StoryContainer>
+
+<StoryContainer background="medium" ß>
+    <LogoType theme="red" />
+</StoryContainer>
+
+### Black or very dark background
+
+Against a black or very dark color background, the logotype should always be shown in white .
+
+The logotype should always be shown in white against a background of NASA red. The logotype should
+never be shown in NASA red against a black or very dark background.
+
 <StoryContainer background="dark">
     <LogoType theme="light" />
 </StoryContainer>
 
-### Stacked
-
-<StoryContainer>
-    <LogoType theme="red" stacked={true} />
+<StoryContainer background="red">
+    <LogoType theme="light" />
 </StoryContainer>
 
-### With center name
+### Medium-Value Background
+
+Against a medium-value background, the logotype may be shown in either black or white, depending on
+which is more appropriate.
+
+The logotype should never be shown in NASA red against a medium-value background.
+
+<StoryContainer background="grey">
+    <LogoType theme="light" />
+</StoryContainer>
+
+<StoryContainer background="grey">
+    <LogoType theme="dark" />
+</StoryContainer>
+
+### Center Identification
+
+The NASA logotype and it's attendant elements of style are always a required element in any NASA
+publication.
+
+To identify any of the NASA centers the NASA logotype and full agency name is shown in conjunction
+with the full center name (John F. Kennedy Space Center) as shown below.
+
+The bold lettering style assures that the center name receives primary emphasis even though it is
+always preceded by the agency name and accompanied by the NASA logo-type.
+
+<StoryContainer>
+    <LogoType theme="dark" centerName="John F. Kennedy Space Center" />
+</StoryContainer>
 
 <StoryContainer>
     <LogoType theme="red" centerName="John F. Kennedy Space Center" />
+</StoryContainer>
+
+<StoryContainer background="dark">
+    <LogoType theme="light" centerName="John F. Kennedy Space Center" />
 </StoryContainer>
 
 ### API

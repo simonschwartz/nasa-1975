@@ -6,11 +6,8 @@ import StoryContainer from '../../../.storybook/components/StoryContainer';
 
 # Agency Name
 
-The full agency name (National Aeronautics and Space Administration) can be displayed stacked or
-inline.
-
-To identify any of the NASA centers, the full center name is shown in conjunction with the full
-agency name.
+The full agency name (National Aeronautics and Space Administration) is used, usually in conjunction
+with the worm logo, to identify the agency as a total entity.
 
 <div style={{ margin: '3rem 0' }}>
     <AgencyName size="xl" style={{ marginBottom: '2rem' }} />
@@ -20,11 +17,32 @@ agency name.
 
 ### Stacked
 
+The agency name can be displayed stacked.
+
 <StoryContainer>
     <AgencyName size="md" stacked />
 </StoryContainer>
 
-### With Center name
+### Inline
+
+The agency name is displayed inline by default.
+
+<StoryContainer>
+    <AgencyName size="md" />
+</StoryContainer>
+
+### Center Identification
+
+To identify any of the NASA centers the agency name is shown in conjunction with the full center
+name (John F. Kennedy Space Center) as shown below.
+
+<StoryContainer>
+    <AgencyName size="md" centerName="John F. Kennedy Space Center" />
+</StoryContainer>
+
+### On light background
+
+Against a light background, the agency name should be shown in black.
 
 <StoryContainer>
     <AgencyName size="md" centerName="John F. Kennedy Space Center" />
@@ -32,12 +50,10 @@ agency name.
 
 ### On dark background
 
-<StoryContainer background="dark">
-    <AgencyName size="md" centerName="John F. Kennedy Space Center" theme="light" />
-</StoryContainer>
+Against a very dark color background, the agency name should always be shown in white.
 
 <StoryContainer background="dark">
-    <AgencyName size="md" centerName="John F. Kennedy Space Center" theme="light" stacked="true" />
+    <AgencyName size="md" centerName="John F. Kennedy Space Center" theme="light" />
 </StoryContainer>
 
 ### API
