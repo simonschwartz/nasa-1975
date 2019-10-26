@@ -1,69 +1,60 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import AgencyName from './';
+import StoryContainer from '../../../.storybook/components/StoryContainer';
 
 <Meta title="Agency Name" component={AgencyName} />
 
 # Agency Name
 
-The full agency name (National Aeronautics and Space Administration) can be displayed stacked or
-inline.
+The full agency name (National Aeronautics and Space Administration) is used, usually in conjunction
+with the worm logo, to identify the agency as a total entity.
 
-To identify any of the NASA centers, the full center name is shown in conjunction with the full
-agency name.
+<div style={{ margin: '3rem 0' }}>
+    <AgencyName size="xl" style={{ marginBottom: '2rem' }} />
+    <AgencyName size="lg" style={{ marginBottom: '2rem' }} />
+    <AgencyName size="md" style={{ marginBottom: '2rem' }} />
+</div>
 
-<Story name="Overview">
-    <AgencyName centerName="John F. Kennedy Space Center" />
-</Story>
+### Stacked
 
-<Preview>
-    <Story name="Stacked">
-        <AgencyName stacked />
-    </Story>
-</Preview>
+The agency name can be displayed stacked.
 
-<Preview>
-    <Story name="Sizes without center name">
-        <div>
-            <AgencyName size="xl" style={{ marginBottom: '2rem' }} />
-            <AgencyName size="lg" style={{ marginBottom: '2rem' }} />
-            <AgencyName size="md" style={{ marginBottom: '2rem' }} />
-            <AgencyName size="sm" style={{ marginBottom: '2rem' }} />
-            <AgencyName size="xs" />
-        </div>
-    </Story>
-</Preview>
+<StoryContainer>
+    <AgencyName size="md" stacked />
+</StoryContainer>
 
-<Preview>
-    <Story name="Sizes with center name">
-        <div>
-            <AgencyName
-                size="xl"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-            <AgencyName
-                size="lg"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-            <AgencyName
-                size="md"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-            <AgencyName
-                size="sm"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-            <AgencyName
-                size="xs"
-                centerName="John F. Kennedy Space Center"
-                style={{ marginBottom: '2rem' }}
-            />
-        </div>
-    </Story>
-</Preview>
+### Inline
+
+The agency name is displayed inline by default.
+
+<StoryContainer>
+    <AgencyName size="md" />
+</StoryContainer>
+
+### Center Identification
+
+To identify any of the NASA centers the agency name is shown in conjunction with the full center
+name (John F. Kennedy Space Center) as shown below.
+
+<StoryContainer>
+    <AgencyName size="md" centerName="John F. Kennedy Space Center" />
+</StoryContainer>
+
+### On light background
+
+Against a light background, the agency name should be shown in black.
+
+<StoryContainer>
+    <AgencyName size="md" centerName="John F. Kennedy Space Center" />
+</StoryContainer>
+
+### On dark background
+
+Against a very dark color background, the agency name should always be shown in white.
+
+<StoryContainer background="dark">
+    <AgencyName size="md" centerName="John F. Kennedy Space Center" theme="light" />
+</StoryContainer>
 
 ### API
 

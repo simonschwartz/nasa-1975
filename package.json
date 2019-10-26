@@ -1,6 +1,6 @@
 {
     "name": "nasa-1975",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "A React design system based on the 1975 NASA Graphics Standards Manual.",
     "main": "build/index.js",
     "repository": {
@@ -24,10 +24,10 @@
     "license": "ISC",
     "devDependencies": {
         "@emotion/core": "^10.0.17",
-        "@storybook/addon-docs": "5.2.0-rc.8",
-        "@storybook/addons": "5.2.0-rc.8",
-        "@storybook/react": "5.2.0-rc.8",
-        "@storybook/theming": "^5.2.0-rc.8",
+        "@storybook/addon-docs": "5.2.0",
+        "@storybook/addons": "5.2.0",
+        "@storybook/react": "5.2.0",
+        "@storybook/theming": "^5.2.0",
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.3",
         "babel-eslint": "^10.0.3",

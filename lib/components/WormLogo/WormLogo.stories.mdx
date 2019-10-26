@@ -1,14 +1,16 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import WormLogo from '.';
 import { NASA_RED, NASA_DARK, NASA_LIGHT, NASA_GREY } from '../../tokens';
+import { Heading, Text } from '../Typography';
+import StoryContainer from '../../../.storybook/components/StoryContainer';
 
-<Meta title="Worm Logo" component={WormLogo} />
+<Meta title="Worm Logo" />
 
 # Worm Logo
 
 This logotype is the central element in NASA's visual communications system. Through consistent and
 repetitive use as a signature device and design element in all of NASA's visual communications, the
-logotype becomes a visual shorthand which identifies the Agency and symbol ically embodies its
+logotype becomes a visual shorthand which identifies the Agency and symbolically embodies its
 activities, achievements and goals.
 
 In the logotype, the letters N-A-S-A are reduced to their most simplified form. The strokes are all
@@ -16,57 +18,78 @@ of one width, evoking the qualities of unity and technical precision. Eliminatio
 in the two "A" letters imparts a vertical thrust to the logotype and lends it a quality of
 uniqueness and contemporary character.
 
-<Story name="Overview">
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <WormLogo style={{ maxWidth: '30rem', marginBottom: '2rem' }} />
-        <WormLogo style={{ maxWidth: '20rem', marginBottom: '2rem' }} />
-        <WormLogo style={{ maxWidth: '12rem' }} />
-    </div>
-</Story>
+<div style={{ margin: '3rem 0' }}>
+    <WormLogo style={{ display: 'block', margin: '2rem 0', maxWidth: '400px' }} />
+    <WormLogo style={{ display: 'block', margin: '2rem 0', maxWidth: '300px' }} />
+    <WormLogo style={{ display: 'block', margin: '2rem 0', maxWidth: '200px' }} />
+</div>
 
-Dark or Red on white background
+## Use with color
 
-<Preview>
-    <Story name="On White Background">
-        <div style={{ background: 'white' }}>
-            <WormLogo theme="red" style={{ maxWidth: '20rem', marginBottom: '2rem' }} />
-            <WormLogo theme="dark" style={{ maxWidth: '20rem' }} />
-        </div>
-    </Story>
-</Preview>
+### White Background
 
-Only white on dark background
+Against a white background the logo­type may be shown in NASA red or black.
 
-<Preview>
-    <Story name="On Dark Background">
-        <div style={{ background: 'black' }}>
-            <WormLogo theme="light" style={{ maxWidth: '20rem' }} />
-        </div>
-    </Story>
-</Preview>
+<StoryContainer theme="light">
+    <WormLogo theme="red" style={{ width: '100%' }} />
+</StoryContainer>
 
-<Preview>
-    <Story name="On Light Background">
-        <div style={{ background: '#EEEEEE' }}>
-            <WormLogo theme="dark" style={{ maxWidth: '20rem' }} />
-        </div>
-    </Story>
-</Preview>
+<StoryContainer theme="light">
+    <WormLogo theme="dark" style={{ width: '100%' }} />
+</StoryContainer>
 
-<Preview>
-    <Story name="On Medium Background">
-        <div style={{ background: NASA_GREY }}>
-            <WormLogo theme="light" style={{ maxWidth: '20rem', marginBottom: '2rem' }} />
-            <WormLogo theme="dark" style={{ maxWidth: '20rem' }} />
-        </div>
-    </Story>
-</Preview>
+### Very Light Value Background
 
-### API
+Against a very light background, the logotype should be shown in black.
+
+The one exception to this would be the use of NASA red logotype in very light areas of four-color
+process reproduction.
+
+<StoryContainer background="medium">
+    <WormLogo theme="dark" style={{ width: '100%' }} />
+</StoryContainer>
+
+<StoryContainer background="medium">
+    <WormLogo theme="red" style={{ width: '100%' }} />
+</StoryContainer>
+
+### Black or very dark background
+
+Against a black or very dark color background, the logotype should always be shown in white .
+
+The logotype should always be shown in white against a background of NASA red. The logotype should
+never be shown in NASA red against a black or very dark background.
+
+<StoryContainer background="dark">
+    <WormLogo theme="light" style={{ width: '100%' }} />
+</StoryContainer>
+
+<StoryContainer background="red">
+    <WormLogo theme="light" style={{ width: '100%' }} />
+</StoryContainer>
+
+### Medium-Value Background
+
+Against a medium-value background, the logotype may be shown in either black or white, depending on
+which is more appropriate.
+
+The logotype should never be shown in NASA red against a medium-value background.
+
+<StoryContainer background="grey">
+    <WormLogo theme="light" style={{ width: '100%' }} />
+</StoryContainer>
+
+<StoryContainer background="grey">
+    <WormLogo theme="dark" style={{ width: '100%' }} />
+</StoryContainer>
+
+## API
 
 ```javascript
 import { WormLogo } from 'nasa-1975';
 ```
+
+### Props
 
 <Props of={WormLogo} />
 

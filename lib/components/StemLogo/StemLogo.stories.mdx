@@ -1,5 +1,6 @@
 import { Meta, Story, Preview, Props, Test } from '@storybook/addon-docs/blocks';
 import StemLogo from './';
+import StoryContainer from '../../../.storybook/components/StoryContainer';
 
 <Meta title="Stem Logo" component={StemLogo} />
 
@@ -11,41 +12,70 @@ publication title.
 This technique is used only on permanent, regularly published documents, and requires advice from
 the NASA Graphics Coordinator at Headquarters.
 
-<Story name="Overview">
-    <div>
-        <StemLogo title="News" theme="dark" size="lg" style={{ marginBottom: '2rem' }} />
-        <StemLogo title="Comet" theme="dark" size="md" style={{ marginBottom: '2rem' }} />
-        <StemLogo title="Voyager" theme="dark" size="sm" />
-    </div>
-</Story>
+<div style={{ margin: '3rem 0' }}>
+    <StemLogo title="News" theme="dark" size="lg" style={{ marginBottom: '2rem' }} />
+    <StemLogo title="News" theme="dark" size="md" style={{ marginBottom: '2rem' }} />
+    <StemLogo title="News" theme="dark" size="sm" />
+</div>
 
-<Preview>
-    <Story name="Dark theme">
-        <StemLogo title="News" theme="dark" />
-    </Story>
-</Preview>
+## Use of colour
 
-<Preview>
-    <Story name="Light theme">
-        <StemLogo title="News" theme="light" />
-    </Story>
-</Preview>
+### White Background
 
-<Preview>
-    <Story name="Red theme">
-        <StemLogo title="News" theme="red" />
-    </Story>
-</Preview>
+Against a white background the logo­type may be shown in NASA red or black.
 
-<Preview>
-    <Story name="Sizes">
-        <div>
-            <StemLogo title="News" size="lg" style={{ marginBottom: '2rem' }} />
-            <StemLogo title="News" size="md" style={{ marginBottom: '2rem' }} />
-            <StemLogo title="News" size="sm" />
-        </div>
-    </Story>
-</Preview>
+<StoryContainer theme="light" style={{ maxWidth: '23rem' }}>
+    <StemLogo title="News" theme="dark" size="sm" />
+</StoryContainer>
+
+<StoryContainer theme="light" style={{ maxWidth: '23rem' }}>
+    <StemLogo title="News" theme="red" size="sm" />
+</StoryContainer>
+
+### Very Light Value Background
+
+Against a very light background, the logotype should be shown in black.
+
+The one exception to this would be the use of NASA red logotype in very light areas of four-color
+process reproduction.
+
+<StoryContainer background="medium" style={{ maxWidth: '23rem' }}>
+    <StemLogo title="News" theme="dark" size="sm" />
+</StoryContainer>
+
+<StoryContainer background="medium" style={{ maxWidth: '23rem' }}>
+    <StemLogo title="News" theme="red" size="sm" />
+</StoryContainer>
+
+### Black or very dark background
+
+Against a black or very dark color background, the logotype should always be shown in white .
+
+The logotype should always be shown in white against a background of NASA red. The logotype should
+never be shown in NASA red against a black or very dark background.
+
+<StoryContainer background="dark" style={{ maxWidth: '23rem' }}>
+    <StemLogo title="News" theme="light" size="sm" />
+</StoryContainer>
+
+<StoryContainer background="red" style={{ maxWidth: '23rem' }}>
+    <StemLogo title="News" theme="light" size="sm" />
+</StoryContainer>
+
+### Medium-Value Background
+
+Against a medium-value background, the logotype may be shown in either black or white, depending on
+which is more appropriate.
+
+The logotype should never be shown in NASA red against a medium-value background.
+
+<StoryContainer background="grey" style={{ maxWidth: '23rem' }}>
+    <StemLogo title="News" theme="light" size="sm" />
+</StoryContainer>
+
+<StoryContainer background="grey" style={{ maxWidth: '23rem' }}>
+    <StemLogo title="News" theme="dark" size="sm" />
+</StoryContainer>
 
 ### API
 

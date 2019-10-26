@@ -1,31 +1,21 @@
 import { Meta, Story } from '@storybook/addon-docs/blocks';
 import { NASA_RED, NASA_GREY, NASA_DARK, NASA_LIGHT } from './';
+import StoryContainer from '../../.storybook/components/StoryContainer';
+import { ColorSwatchContainer, ColorSwatch } from '../../.storybook/components/ColorSwatch';
 import { Text } from '../components/Typography';
 
 <Meta title="Colors" />
 
 # Colors
 
-And markdown here
+The swatches shown below are to be used in achieving a visual match with NASA colors.
 
-<Story name="Red">
-    <section>
-        <div style={{ backgroundColor: NASA_RED, height: '200px', width: '100%' }}></div>
-        <Text tag="p">NASA Red #E3016A</Text>
-    </section>
-</Story>
-
-<Story name="Dark">
-    <div style={{ backgroundColor: NASA_DARK, height: '200px', width: '100%' }}></div>
-</Story>
-
-<Story name="Light">
-    <div style={{ backgroundColor: NASA_LIGHT, height: '200px', width: '100%' }}></div>
-</Story>
-
-<Story name="Grey">
-    <div style={{ backgroundColor: NASA_GREY, height: '200px', width: '100%' }}></div>
-</Story>
+<ColorSwatchContainer>
+    <ColorSwatch name="NASA Red" color={NASA_RED} />
+    <ColorSwatch name="NASA Grey" color={NASA_GREY} />
+    <ColorSwatch name="NASA Light" color={NASA_LIGHT} />
+    <ColorSwatch name="NASA Dark" color={NASA_DARK} />
+</ColorSwatchContainer>
 
 ### API
 
