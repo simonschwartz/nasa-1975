@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { configure, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { FONT_FAMILY_DEFAULT } from '../lib/tokens';
@@ -12,11 +13,18 @@ const theme = create({
 addParameters({
     options: {
         theme,
-        storySort: (a, b) => {
-            if (a[1].id === 'welcome--page') return -1;
-            return a[1].kind === b[1].kind ? 0 : a[1].id.localeCompare(b[1].id);
-        },
     },
 });
 
-configure(require.context('../lib/', true, /\.stories\.(js|mdx)$/), module);
+const loaderFn = () => {
+    const allExports = [
+        require('../lib/index.stories.mdx'),
+        require('../lib/components/WormLogo/WormLogo.stories.mdx'),
+        require('../lib/components/LogoType/LogoType.stories.mdx'),
+    ];
+    const req = require.context('../lib/components', true, /\.stories\.mdx$/);
+    req.keys().forEach(fname => allExports.push(req(fname)));
+    return allExports;
+};
+
+configure(loaderFn, module);

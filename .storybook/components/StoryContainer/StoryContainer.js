@@ -49,7 +49,7 @@ const StoryContainer = ({ background = DEFAULT_BACKGROUND, children, ...restProp
 
 StoryContainer.propTypes = {
     /** Background colour of container */
-    background: PropTypes.oneOf(['dark', 'light', 'red', 'grey']),
+    background: PropTypes.oneOf(['dark', 'light', 'red', 'grey', 'medium']),
     /** Container content */
     children: PropTypes.node.isRequired,
 };
