@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="NASA worm logo" src="https://github.com/simonschwartz/nasa-1975/raw/master/nasa-worm.png">
+    <img alt="NASA logo type" src="https://github.com/simonschwartz/nasa-1975/raw/master/nasa-logotype.png">
 </p>
 
 # NASA 1975
