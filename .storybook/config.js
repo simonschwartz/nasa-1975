@@ -22,7 +22,7 @@ const loaderFn = () => {
         require('../lib/components/WormLogo/WormLogo.stories.mdx'),
         require('../lib/components/LogoType/LogoType.stories.mdx'),
     ];
-    const req = require.context('../lib/components', true, /\.stories\.mdx$/);
+    const req = require.context('../lib', true, /\.stories\.mdx$/);
     req.keys().forEach(fname => allExports.push(req(fname)));
     return allExports;
 };
